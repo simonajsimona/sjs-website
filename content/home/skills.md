@@ -18,19 +18,25 @@ weight = 7
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  name = "R Programming"
+  description = "Data Analytics, Data Visualisation and Literacy Programming with R Markdown"
   
 [[feature]]
-  icon = "chart-line"
+  icon = "chart-bar"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Quantitative and Computational Social Science"
+  description = "STATA, SPSS, NetLogo, Python"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "drafting-compass"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Research Design"
+  description = "I have taught research design both at the University of Zambia and the University of Glasgow"
+
+[[feature]]
+  icon = "users"
+  icon_pack = "fas"
+  name = "Qualitative research"
+  description = "NVivo, ATLAS-ti"  
 
 +++
