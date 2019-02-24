@@ -14,14 +14,10 @@ weight = 60
 
 +++
 
-This is an example of using the *custom* widget to create your own homepage section.
+I am a Graduate Teaching Assistant in the following courses at University of Glasgow:
 
-I am a teaching instructor for the following courses at University X:
-
-- CS101: An intro to computer science
-- CS102: An intro to computer science
-- CS103: An intro to computer science
-- CS104: An intro to computer science
-- CS105: An intro to computer science
-- CS106: An intro to computer science
-- CS107: An intro to computer science
+- Research Design (Postgraduate)
+- Quantitative Data Analysis (Postgraduate)
+- Quantitative Methods for Social Sciences (Honours)
+- Quantitative Methods I (Undergraduates)
+- Quantitative Methods II (Undergraduates)
