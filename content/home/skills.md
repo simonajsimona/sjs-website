@@ -38,5 +38,18 @@ weight = 7
   icon_pack = "fas"
   name = "Qualitative research"
   description = "NVivo, ATLAS-ti"  
+  
+  
+[[feature]]
+  icon = "lightbulb"
+  icon_pack = "fas"
+  name = "Philosophy of Social Science and Social theory"
+  description = "Classical and Contemporary social theory"    
+
+[[feature]]
+  icon = "microphone-alt"
+  icon_pack = "fas"
+  name = "Inspiration"
+  description = "What the people need is inspiration. I give inspirational talks but importantly I read an inspirational book every month. Send an email below to recieve a summary of my ready monthly" 
 
 +++

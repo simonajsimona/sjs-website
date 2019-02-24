@@ -1,9 +1,9 @@
 +++
-title = "A Person Re-Identification System For Mobile Devices"
-date = 2015-09-01T00:00:00
+title = "Intimate Partner Violence (IPV) In Zambia: Sociodemographic Characteristics and Use of Maternal Healthcare"
+date = 2018-09-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["GA Cushen"]
+authors = ["Simona Simona", "Mazuba Muchindu", "Harriet Ntalasha"]
 
 # Publication type.
 # Legend:
@@ -21,7 +21,7 @@ publication = "In *Signal Image Technology & Internet Systems (SITIS)*, IEEE."
 publication_short = "In *SITIS*"
 
 # Abstract.
-abstract = "Person re-identification is a critical security task for recognizing a person across spatially disjoint sensors. Previous work can be computationally intensive and is mainly based on low-level cues extracted from RGB data and implemented on a PC for a fixed sensor network (such as traditional CCTV). We present a practical and efficient framework for mobile devices (such as smart phones and robots) where high-level semantic soft biometrics are extracted from RGB and depth data. By combining these cues, our approach attempts to provide robustness to noise, illumination, and minor variations in clothing. This mobile approach may be particularly useful for the identification of persons in areas ill-served by fixed sensors or for tasks where the sensor position and direction need to dynamically adapt to a target. Results on the BIWI dataset are preliminary but encouraging. Further evaluation and demonstration of the system will be available on our website."
+abstract = "This study used the 2013-2014 Zambia Demographic and Health Survey (ZDHS) data to examine, on one hand, the socio-demographic characteristics associated with intimate partner violence (IPV) and, on the other hand, the relationship between IPV and maternal health care (place of delivery and ANC visits) utilization. The findings indicate that women’s characteristics including marital status, household wealth, witnessing parental violence and attitudes justifying wife beating were significantly associated with reporting experience of IPV. Partner characteristics significantly associated with IPV were alcohol consumption and jealous behaviour. In this study, IPV was not found to be strongly associated with use of maternal health care. The study indicates that gender inequality and problematic cultural norms that privilege men with power over women still exist in Zambia, and thus IPV preventive strategies should incorporate means of toning down such norms to enhance the welfare of women."
 
 # Summary. An optional shortened abstract.
 summary = ""
