@@ -1,28 +1,28 @@
 +++
-title = "Example Talk"
+title = "Introduction to R"
 date = 2017-01-01T00:00:00  # Schedule page publish date (not talk date).
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = []
+authors = ["Simona Simona"]
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2030-06-01T13:00:00
-time_end = 2030-06-01T15:00:00
+time_start = 2019-03-13T08:00:00
+time_end = 2019-03-15T17:00:00
 all_day = false
 
 # Location of event.
-location = "London, United Kingdom"
+location = "University of Zambia, Lusaka, Zambia"
 
 # Name of event and optional event URL.
 event = "Academic Theme Conference"
 event_url = "https://example.org"
 
 # Abstract. What's your talk about?
-abstract = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
+abstract = "The department of social work and sociology will run a workshop in introduction to R from 13th to 15th of March 2019. R is a statistical programming language and computing environment that has become a lingua franca for the statistical community worldwide and it is increasingly becoming prominent in the social sciences too. Investing time in learning and understanding how R works brings huge benefits to researchers. It allows us to perform almost any statistical analysis from the most basic to the most advanced; It offers user flexibility to create and incorporate external packages to produce unique solutions to complex problems; it has become one of the best platforms to produce powerful data graphics; it makes it easy to transition to other object-oriented programming languages if one desires and it is FREE. The development of R Markdown available through RStudio has made it even more valuable. R Markdown offers a comprehensive ecosystem for authoring documents as it enables researchers to combine the statistical and text aspects of their projects to produce beautifully looking documents in form of reports, journal articles, books, blog posts, presentations and interactive applications. R Markdown documments can be compiled to multiple types of output formats including LaTeX, HTML and Word. This workshop will introduce participants to the R invironment and expose them to enormous facilities that RStudio provides"
 
 # Summary. An optional shortened abstract.
-summary = "An example talk using Academic's Markdown slides feature."
+#summary = "An example talk using Academic's Markdown slides feature."
 
 # Is this a featured talk? (true/false)
 featured = false
