@@ -4,16 +4,16 @@
     
     <url>
     
-      <loc>/post/jupyter/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+      <loc>/tutorial/example/</loc>
+      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>/tutorial/example/</loc>
-      <lastmod>2018-09-09T00:00:00+01:00</lastmod>
+      <loc>/post/jupyter/</loc>
+      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -28,7 +28,7 @@
     
     <url>
     
-      <loc>/publication/person-re-id/</loc>
+      <loc>/publication/intimate-violence/</loc>
       <lastmod>2018-09-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -38,6 +38,14 @@
     
       <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/risk-behaviour/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -84,24 +92,7 @@
     
     <url>
     
-      <loc>/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -152,7 +143,25 @@
     
     <url>
     
+      <loc>/authors/baca-atlas-s/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/chery-mb/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -178,15 +187,6 @@
     
     <url>
     
-      <loc>/authors/ga-cushen/</loc>
-      <lastmod>2013-07-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/authors/harriet-ntalasha/</loc>
       <lastmod>2018-09-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -196,8 +196,8 @@
     
     <url>
     
-      <loc>/authors/ms-nixon/</loc>
-      <lastmod>2013-07-01T00:00:00+01:00</lastmod>
+      <loc>/authors/jiwatram-negron-t/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -207,6 +207,24 @@
     
       <loc>/authors/mazuba-muchindu/</loc>
       <lastmod>2018-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/michalopolous-lt/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/ncube-a/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -232,7 +250,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+01:00</lastmod>
+      <lastmod>2018-09-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -275,7 +293,16 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/simona-js/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
