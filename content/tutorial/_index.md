@@ -25,5 +25,5 @@ type = "docs"  # Do not modify.
 
 #After renaming or deleting the parent folder, you may wish to update any `[[menu.main]]` menu links to it in the `config.toml`.
 +++
-This page hosts documentations of all my workshops. In the sidebar, select the name of the workshop you are enrolled in and follow instructions accordingly
+This page hosts documentation for all my workshops. In the sidebar, select the name of the workshop you are enrolled in and follow instructions accordingly
  

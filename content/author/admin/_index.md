@@ -23,9 +23,10 @@ email = ""
 
 # List (academic) interests or hobbies
 interests = [
-  "Computational Social Sciences",
+  "Computational Social Science",
   "Applied Bayesian Modelling",
   "Multilevel Modelling",
+  "Agent-Based Modelling",
   "Global Health",
   "Medical Sociology",
   "Social Theory"
@@ -91,4 +92,4 @@ user_groups = ["Researchers", "Visitors"]
 
 +++
 
-I am a PhD student at the University of Glasgow studying Sociology and Quantitative Social Science Methods. Using advanced multlevel models, I study structural sources of disparities in health and health care outcomes in low and middle-income countries, especially sub-Saharan Africa. I am also interested in the concept of emergence and how emergent properties develop in the social system. This means both bottom-up and top-bottom approaches to studying social phenomena are appealing to me. It also means I have wide ranging interests, including philosophy of social scineces, social theory, Quantitative social science, Qualitative research and Computational social science
+I am a PhD student at the University of Glasgow studying Sociology and Quantitative Social Science Methods. Using advanced multlevel models, I study structural sources of disparities in health and health care outcomes in low and middle-income countries, especially sub-Saharan Africa. I am also interested in the concept of emergence and how emergent properties develop in the social system. This means both bottom-up and top-down approaches to studying social phenomena are appealing to me. It also means I have wide ranging interests, from Philosophy of Science to Computational Social Science, including everything in between.
