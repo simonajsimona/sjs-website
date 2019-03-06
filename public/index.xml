@@ -6,13 +6,13 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introduction to R (University of Zambia)</title>
       <link>/tutorial/example/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0200</pubDate>
       
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;Download a folder containing the lab handouts and datasets here&lt;/p&gt;
@@ -85,7 +85,7 @@ rm Untitled.md
     <item>
       <title>Intimate Partner Violence (IPV) In Zambia: Sociodemographic Characteristics and Use of Maternal Healthcare</title>
       <link>/publication/intimate-violence/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0200</pubDate>
       
       <guid>/publication/intimate-violence/</guid>
       <description></description>
@@ -94,7 +94,7 @@ rm Untitled.md
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -104,7 +104,7 @@ rm Untitled.md
     <item>
       <title>“Life at the River is a Living Hell:” Qualitative study of trauma, mental health, substance use and HIV risk behaviour among female fish traders from the Kafue Flatlands in Zambia</title>
       <link>/publication/risk-behaviour/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0200</pubDate>
       
       <guid>/publication/risk-behaviour/</guid>
       <description></description>
@@ -113,7 +113,7 @@ rm Untitled.md
     <item>
       <title>Introduction to R</title>
       <link>/talk/example/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0200</pubDate>
       
       <guid>/talk/example/</guid>
       <description>&lt;p&gt;#&lt;div class=&#34;alert alert-note&#34;&gt;
@@ -138,7 +138,7 @@ rm Untitled.md
     <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/project/external-project/</guid>
       <description></description>
@@ -147,7 +147,7 @@ rm Untitled.md
     <item>
       <title>Internal Project</title>
       <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -165,7 +165,7 @@ rm Untitled.md
     <item>
       <title>Academic: the website designer for Hugo</title>
       <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/post/getting-started/</guid>
       <description>
