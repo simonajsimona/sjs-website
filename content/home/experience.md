@@ -25,7 +25,7 @@ date_format = "January 2006"
   location = "Glasgow, United Kingdom"
   date_start = "2016-10-03"
   date_end = ""
-  description = """PhD Research and teaching in Research Design, Quantitative Methods and Computing with R"""
+  description = """PhD Research and teaching Research Design, Quantitative Methods and Computing with R"""
 
 [[experience]]
   title = "Lecturer"
@@ -34,6 +34,6 @@ date_format = "January 2006"
   location = "Lusaka, Zambia"
   date_start = "2013-09-01"
   date_end = "2016-10-01"
-  description = """Research and teaching in Sociology, Research Methods and Social Statistics."""
+  description = """Research and teaching Sociology, Research Methods and Social Statistics."""
 
 +++

@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/creating-website/</loc>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/example/</loc>
       <lastmod>2019-03-01T00:00:00+02:00</lastmod>
     </url>
@@ -78,14 +86,6 @@
     
       <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     </url>
     
   
@@ -233,7 +233,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
     </url>
     
   
@@ -267,16 +267,7 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -293,7 +284,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-03-01T00:00:00+02:00</lastmod>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -336,24 +327,6 @@
     
       <loc>/tags/</loc>
       <lastmod>2018-01-13T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
