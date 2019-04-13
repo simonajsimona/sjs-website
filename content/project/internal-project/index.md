@@ -9,7 +9,7 @@ date = 2019-03-15T00:00:00
 summary = "Structural violence and (in)equities in maternal healthcare utilisation in sub-Sahran Africa."
 
 # Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
+# Example: `tags = [""]`
 #tags = [""]
 
 # Optional external URL for project (replaces project detail page).
