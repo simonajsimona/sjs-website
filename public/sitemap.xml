@@ -76,6 +76,14 @@
     
     <url>
     
+      <loc>/publication/truck-drivers/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/external-project/</loc>
       <lastmod>2016-04-27T00:00:00+01:00</lastmod>
     </url>
@@ -196,6 +204,15 @@
     
     <url>
     
+      <loc>/authors/kansankala-b/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/authors/mazuba-muchindu/</loc>
       <lastmod>2018-09-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -207,6 +224,24 @@
     
       <loc>/authors/michalopolous-lt/</loc>
       <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/michalopoulos-lm/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/ncube-n/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -266,6 +301,15 @@
     
     <url>
     
+      <loc>/authors/raidoo-j/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -292,8 +336,26 @@
     
     <url>
     
+      <loc>/authors/simona-sj/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/authors/simona-simona/</loc>
       <lastmod>2018-09-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/sinkala-e/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
