@@ -50,6 +50,6 @@ weight = 7
   icon = "microphone-alt"
   icon_pack = "fas"
   name = "Inspiration"
-  description = "What the people need is inspiration. I give inspirational talks but importantly I read an inspirational book every month. Send an email below to recieve a summary of my ready monthly" 
+  description = "What the people need is inspiration. I give inspirational talks. I also read an inspirational book every month. Put in your details below to receive summaries of the books I read monthly" 
 
 +++
