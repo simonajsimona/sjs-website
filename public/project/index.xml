@@ -6,7 +6,7 @@
     <description>Recent content in Projects on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>PhD Thesis</title>
       <link>/project/internal-project/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/internal-project/</guid>
       <description>My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.</description>
@@ -23,7 +23,7 @@
     <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>/project/external-project/</guid>
       <description></description>

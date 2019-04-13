@@ -6,13 +6,13 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PhD Thesis</title>
       <link>/project/internal-project/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/internal-project/</guid>
       <description>&lt;p&gt;My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.&lt;/p&gt;
@@ -40,7 +40,7 @@
     <item>
       <title>Introduction to R (University of Zambia)</title>
       <link>/tutorial/example/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;Download a folder containing the lab handouts and datasets here&lt;/p&gt;
@@ -113,7 +113,7 @@ rm Untitled.md
     <item>
       <title>Intimate Partner Violence (IPV) In Zambia: Sociodemographic Characteristics and Use of Maternal Healthcare</title>
       <link>/publication/intimate-violence/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0200</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
       
       <guid>/publication/intimate-violence/</guid>
       <description></description>
@@ -122,7 +122,7 @@ rm Untitled.md
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -132,7 +132,7 @@ rm Untitled.md
     <item>
       <title>“Life at the River is a Living Hell:” Qualitative study of trauma, mental health, substance use and HIV risk behaviour among female fish traders from the Kafue Flatlands in Zambia</title>
       <link>/publication/risk-behaviour/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0200</pubDate>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/risk-behaviour/</guid>
       <description></description>
@@ -141,7 +141,7 @@ rm Untitled.md
     <item>
       <title>Introduction to R</title>
       <link>/talk/example/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>/talk/example/</guid>
       <description>&lt;p&gt;#&lt;div class=&#34;alert alert-note&#34;&gt;
@@ -166,7 +166,7 @@ rm Untitled.md
     <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>/project/external-project/</guid>
       <description></description>
@@ -175,7 +175,7 @@ rm Untitled.md
     <item>
       <title>Academic: the website designer for Hugo</title>
       <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>/post/getting-started/</guid>
       <description>
