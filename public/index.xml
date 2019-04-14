@@ -6,23 +6,13 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>PhD Thesis</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>A gentle introduction to R</title>
       <link>/tutorial/sgss-summer/</link>
-      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
       <description>&lt;p&gt;Download a folder containing the lab handouts and datasets here&lt;/p&gt;
@@ -32,10 +22,20 @@
     <item>
       <title>Data manipulation with R</title>
       <link>/tutorial/sgss-summer-datamanip/</link>
-      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer-datamanip/</guid>
       <description>&lt;p&gt;Download a folder containing the lab handouts and datasets here&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD Thesis</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.&lt;/p&gt;
 </description>
     </item>
     

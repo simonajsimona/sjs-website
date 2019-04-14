@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>/tutorial/sgss-summer/</loc>
+      <lastmod>2019-04-14T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tutorial/sgss-summer-datamanip/</loc>
+      <lastmod>2019-04-14T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/internal-project/</loc>
       <lastmod>2019-03-15T00:00:00+00:00</lastmod>
     </url>
@@ -12,16 +28,8 @@
     
     <url>
     
-      <loc>/tutorial/sgss-summer/</loc>
-      <lastmod>2019-03-14T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tutorial/sgss-summer-datamanip/</loc>
-      <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+      <loc>/tutorial/</loc>
+      <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -38,14 +46,6 @@
     
       <loc>/tutorial/example/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tutorial/</loc>
-      <lastmod>2018-09-09T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -334,7 +334,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-03-15T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-14T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
