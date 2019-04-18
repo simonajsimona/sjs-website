@@ -35,7 +35,8 @@
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/example/</guid>
-      <description>Download a folder containing the lab handouts and datasets here</description>
+      <description>Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it here if you need it. It also has basic R commands.
+The folder containing lab handouts and datasets should be downloaded from here</description>
     </item>
     
   </channel>
