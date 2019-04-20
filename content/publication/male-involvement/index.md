@@ -53,9 +53,9 @@ projects = []
 slides = ""
 
 # Links (optional).
-url_pdf = "https://simonajsimona.com/"
+url_pdf = "https://github.com/simonajsimona/sjs-website/blob/master/public/male_involvement.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "https://github.com/simonajsimona/sjs-website/blob/master/public/codes/male_involvement.Rmd"
 url_dataset = ""
 url_project = ""
 url_slides = ""
