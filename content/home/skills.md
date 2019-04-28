@@ -19,7 +19,7 @@ weight = 7
   icon = "r-project"
   icon_pack = "fab"
   name = "R Programming"
-  description = "Data Analytics, Data Visualisation and Literacy Programming with R Markdown"
+  description = "Data Analytics, Data Visualisation and R Markdown"
   
 [[feature]]
   icon = "chart-bar"
@@ -36,7 +36,7 @@ weight = 7
 [[feature]]
   icon = "users"
   icon_pack = "fas"
-  name = "Qualitative research"
+  name = "Qualitative research software"
   description = "NVivo, ATLAS-ti"  
   
   
@@ -44,7 +44,7 @@ weight = 7
   icon = "lightbulb"
   icon_pack = "fas"
   name = "Philosophy of Social Science and Social theory"
-  description = "Classical and Contemporary social theory"    
+  description = "I am mostly interested in how the philosophy of social science and social theory inform social science research"    
 
 [[feature]]
   icon = "microphone-alt"
