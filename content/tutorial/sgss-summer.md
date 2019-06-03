@@ -15,5 +15,5 @@ linktitle = "A gentle introduction to R (SGSSS)"
   weight = 2
 +++
 
-Download a folder containing the lab handouts and datasets here
+Download the slides for this presentation [here](https://simonajsimona.com/training/gentle_introduction_to_R.html)
 
