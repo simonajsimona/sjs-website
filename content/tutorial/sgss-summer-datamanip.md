@@ -15,5 +15,7 @@ linktitle = "Data manipulation with R (SGSSS)"
   weight = 3
 +++
 
-Download a folder containing the lab handouts and datasets here
+Download the introduction to R and installation instructions [here](https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf) 
+
+A folder containing all the workshop materials is [here](https://simonajsimona.com/training/Data_manip.zip)
 
