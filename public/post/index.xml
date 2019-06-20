@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jun 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Twitter Data Mining</title>
+      <link>/post/twitter_data/</link>
+      <pubDate>Wed, 19 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/post/twitter_data/</guid>
+      <description>In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install R and RStudio on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio here. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains.</description>
+    </item>
     
     <item>
       <title>Building a website with Blogdown and R Markdown</title>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.0.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Simona Simona">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install R and RStudio on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio here. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/twitter_data/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="SIMONA SIMONA">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="SIMONA SIMONA">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/twitter_data/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="SIMONA SIMONA">
+  <meta property="og:url" content="/post/twitter_data/">
+  <meta property="og:title" content="Twitter Data Mining | SIMONA SIMONA">
+  <meta property="og:description" content="In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install R and RStudio on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio here. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains."><meta property="og:image" content="/img/avatar.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-06-19T21:13:14-05:00">
+  
+  <meta property="article:modified_time" content="2019-06-19T21:13:14-05:00">
+  
+
+  
+
+  
+
+  <title>Twitter Data Mining | SIMONA SIMONA</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">SIMONA SIMONA</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Training</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Twitter Data Mining</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2019-06-19 21:13:14 -0500 -0500" itemprop="datePublished">
+<meta content="2019-06-19 21:13:14 -0500 -0500" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jun 19, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Twitter%20Data%20Mining&amp;url=%2fpost%2ftwitter_data%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2ftwitter_data%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2ftwitter_data%2f&amp;title=Twitter%20Data%20Mining"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2ftwitter_data%2f&amp;title=Twitter%20Data%20Mining"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Twitter%20Data%20Mining&amp;body=%2fpost%2ftwitter_data%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p>In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install <a href="https://www.r-project.org/">R</a> and <a href="https://www.rstudio.com/">RStudio</a> on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio <a href="https://simonajsimona.com/R-Studio_Environment.pdf">here</a>. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains. Assuming everything is set, we will need the following suite of packages. We might as well begin by installing them.</p>
+<pre class="r"><code>install.packages(&quot;twitteR&quot;) # As the name indicate, it is used for capturing data from twitter
+install.packages(&quot;ROAuth&quot;) # You need to be authorised to get data from twitter, this package will serve that purpose
+install.packages(&quot;httr&quot;) # For requesting data from APIs
+install.packages(&quot;rtweet&quot;) # Another package we use to get data from twitter and analyse it
+library(twitteR)
+library(ROAuth)
+library(httr)
+library(rtweet)</code></pre>
+<p>After we are done with the packages, we will need credentials authorising us to access twitter data. It is important for us to have credentials so that twitter can control how much information we are gathering and that we do not abuse the platform. To do that, we need to create an app on the twitter developer site and we will use this app to call the twitter API. Click <a href="https://developer.twitter.com/content/developer-twitter/en.html">here</a> to access the website or you can just Google <em>twitter developer platform</em> or any combination of words which have the words twitter and developer next to each other. We need to have a twitter for us to do this, which I assume we already have, otherwise why would we need to extract data from a community we don’t belong to. On the developer platform, we will create a developer account (yes it is different from your main twitter account). Twitter will ask for your mobile number here. It is important for you to supply the correct number because they will use it for authentication. Click on the ‘Create New App’ once you sign in. It is located on the top right corner of the screen. Name and describe the app as you wish. The instructions are pretty straightforward. Some fields are mandatory. You will be requested to provide a website and callback URLs. You can provide your own website if you have one. Any website should suffice here. The callback URLs are not mandatory – you can leave them blank.</p>
+<p>After the app is created, it will appear on your screen and you should be able to click on the ‘details’ button, to get a page that looks like a picture below. You can see the name of my app, description, my website URL and callback URL as indicated above. On the ‘keys and tokens’ tab, you will find the credentials that are needed for you to be authorised to collect data on twitter. I have chosen not to show that tab here because it contains my own credentials and I didn’t want them exposed to anybody who reads this post. You also need to keep yours confidential because anyone can (mis)use them if they are exposed. They include API key, API secret key, Access token and Access token secret.</p>
+<div class="figure">
+<img src="/Users/simonasimona/twitter.png" alt="Twitter developer app page." />
+<p class="caption">Twitter developer app page.</p>
+</div>
+<p>Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the <code>rtweet</code> package by Michael Kearney and the <code>twitteR</code> package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user.</p>
+<p>For the <code>rtweet</code> package, we need to copy the credentials and put then in the <code>create_tocken</code> function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.</p>
+<pre class="r"><code>token &lt;- create_token(
+  app = &quot;simona_app&quot;,
+  consumer_key = &quot;VocbltyHiK5F2VHnC4jRpmaT8&quot;,
+  consumer_secret = &quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&quot;,
+  access_token = &quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&quot;,
+  access_secret = &quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&quot;)</code></pre>
+<p>For the <code>twitteR</code> package, you just need the keys to be in the following format. The exact wording of the access token shouldn’t matter much.</p>
+<pre class="r"><code>api_key &lt;- &quot;VocbltyHiK5F2VHnC4jRpmaT8&quot;
+api_secret &lt;- &quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&quot;
+access_token &lt;- &quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&quot;
+access_token_secret &lt;- &quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&quot;
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)</code></pre>
+<p>Assuming I want to examine gender-based violence discourses in virtual spaces and I want to collect 5000 tweets which make reference to gender-based violence. The number is arbitrary, you can choose your own sample size here if you want depending on what you want to study. Below we specify the commands for requesting data from the twitter API using our credentials. For the <code>twitteR</code> package the key objects should appear in your global environment. The <code>retweet</code> package will only show the token object and environment in the variables section.</p>
+<pre class="r"><code>tweets &lt;- search_tweets(&quot;gender violence&quot;, n = 5000, include_rts = FALSE )</code></pre>
+<p>The code from <code>rtweet</code> is pretty straightforward. It says we are looking for 5000 tweets which contain gender and violence anywhere in the tweets and we want our search results to be put in the object we have named <code>tweets</code>. The <code>search_tweets()</code> is the function which performs the job. The <code>include_rts=FALSE</code> bit means we don’t want retweets to be included in our search. Specifying the same query in the <code>twitteR</code> package, our code would look like the following. Not so different: We want 5000 tweets containing the words gender and violence of any language and we want them put in the <code>tweets</code> object. Note that here we have not told the twitter API to exclude retweets.</p>
+<pre class="r"><code>tweets &lt;- searchTwitter(&quot;gender+violence&quot;, n=5000, lang=NULL)</code></pre>
+<p>We should now have our data and the next job, which should be the subject of my next post, is to manipulate it so that it can be ready to be used in quantitative text analysis. But before we go, I want to introduce another platform, which you can use to mine twitter data, especially for those who get a little bogged down by programming stuff. It has search and visualisation capabilities built within it. It is called <a href="http://socialdatalab.net/COSMOS">COSMOS</a>, developed by the <a href="http://socialdatalab.net/">social data science lab</a> at Cardiff University. It is free for academic institutions and not-for-profit organisations. The interface looks as follows and you will find demos on the website on how to collect and analyse the data. It is pretty straight forward and I highly recommend it.</p>
+<div class="figure">
+<img src="/Users/simonasimona/cosmos.png" alt="Cosmos interface." />
+<p class="caption">Cosmos interface.</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hud47bc49abe3e5ccc8ac4db064bdea590_633068_250x250_fill_q75_box_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Simona Simona</a></h5>
+    <h6 class="card-subtitle">PhD Candidate</h6>
+    <p class="card-text" itemprop="description">My research interests include computational social sciences, multilevel modelling, research design, sociology of medicine and global health.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/simonajsimona" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=uI6in6EAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/simonajsimona" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/simona-simona-63580460/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.c1b0baf12cd491effaeeb294faf1e83e.js"></script>
+
+  </body>
+</html>
+

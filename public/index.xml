@@ -6,8 +6,58 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jun 2019 21:13:14 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter Data Mining</title>
+      <link>/post/twitter_data/</link>
+      <pubDate>Wed, 19 Jun 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/post/twitter_data/</guid>
+      <description>
+
+
+&lt;p&gt;In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio &lt;a href=&#34;https://simonajsimona.com/R-Studio_Environment.pdf&#34;&gt;here&lt;/a&gt;. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains. Assuming everything is set, we will need the following suite of packages. We might as well begin by installing them.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;twitteR&amp;quot;) # As the name indicate, it is used for capturing data from twitter
+install.packages(&amp;quot;ROAuth&amp;quot;) # You need to be authorised to get data from twitter, this package will serve that purpose
+install.packages(&amp;quot;httr&amp;quot;) # For requesting data from APIs
+install.packages(&amp;quot;rtweet&amp;quot;) # Another package we use to get data from twitter and analyse it
+library(twitteR)
+library(ROAuth)
+library(httr)
+library(rtweet)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After we are done with the packages, we will need credentials authorising us to access twitter data. It is important for us to have credentials so that twitter can control how much information we are gathering and that we do not abuse the platform. To do that, we need to create an app on the twitter developer site and we will use this app to call the twitter API. Click &lt;a href=&#34;https://developer.twitter.com/content/developer-twitter/en.html&#34;&gt;here&lt;/a&gt; to access the website or you can just Google &lt;em&gt;twitter developer platform&lt;/em&gt; or any combination of words which have the words twitter and developer next to each other. We need to have a twitter for us to do this, which I assume we already have, otherwise why would we need to extract data from a community we don’t belong to. On the developer platform, we will create a developer account (yes it is different from your main twitter account). Twitter will ask for your mobile number here. It is important for you to supply the correct number because they will use it for authentication. Click on the ‘Create New App’ once you sign in. It is located on the top right corner of the screen. Name and describe the app as you wish. The instructions are pretty straightforward. Some fields are mandatory. You will be requested to provide a website and callback URLs. You can provide your own website if you have one. Any website should suffice here. The callback URLs are not mandatory – you can leave them blank.&lt;/p&gt;
+&lt;p&gt;After the app is created, it will appear on your screen and you should be able to click on the ‘details’ button, to get a page that looks like a picture below. You can see the name of my app, description, my website URL and callback URL as indicated above. On the ‘keys and tokens’ tab, you will find the credentials that are needed for you to be authorised to collect data on twitter. I have chosen not to show that tab here because it contains my own credentials and I didn’t want them exposed to anybody who reads this post. You also need to keep yours confidential because anyone can (mis)use them if they are exposed. They include API key, API secret key, Access token and Access token secret.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/Users/simonasimona/twitter.png&#34; alt=&#34;Twitter developer app page.&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Twitter developer app page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the &lt;code&gt;rtweet&lt;/code&gt; package by Michael Kearney and the &lt;code&gt;twitteR&lt;/code&gt; package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user.&lt;/p&gt;
+&lt;p&gt;For the &lt;code&gt;rtweet&lt;/code&gt; package, we need to copy the credentials and put then in the &lt;code&gt;create_tocken&lt;/code&gt; function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;token &amp;lt;- create_token(
+  app = &amp;quot;simona_app&amp;quot;,
+  consumer_key = &amp;quot;VocbltyHiK5F2VHnC4jRpmaT8&amp;quot;,
+  consumer_secret = &amp;quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&amp;quot;,
+  access_token = &amp;quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&amp;quot;,
+  access_secret = &amp;quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the &lt;code&gt;twitteR&lt;/code&gt; package, you just need the keys to be in the following format. The exact wording of the access token shouldn’t matter much.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;api_key &amp;lt;- &amp;quot;VocbltyHiK5F2VHnC4jRpmaT8&amp;quot;
+api_secret &amp;lt;- &amp;quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&amp;quot;
+access_token &amp;lt;- &amp;quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&amp;quot;
+access_token_secret &amp;lt;- &amp;quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&amp;quot;
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assuming I want to examine gender-based violence discourses in virtual spaces and I want to collect 5000 tweets which make reference to gender-based violence. The number is arbitrary, you can choose your own sample size here if you want depending on what you want to study. Below we specify the commands for requesting data from the twitter API using our credentials. For the &lt;code&gt;twitteR&lt;/code&gt; package the key objects should appear in your global environment. The &lt;code&gt;retweet&lt;/code&gt; package will only show the token object and environment in the variables section.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tweets &amp;lt;- search_tweets(&amp;quot;gender violence&amp;quot;, n = 5000, include_rts = FALSE )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The code from &lt;code&gt;rtweet&lt;/code&gt; is pretty straightforward. It says we are looking for 5000 tweets which contain gender and violence anywhere in the tweets and we want our search results to be put in the object we have named &lt;code&gt;tweets&lt;/code&gt;. The &lt;code&gt;search_tweets()&lt;/code&gt; is the function which performs the job. The &lt;code&gt;include_rts=FALSE&lt;/code&gt; bit means we don’t want retweets to be included in our search. Specifying the same query in the &lt;code&gt;twitteR&lt;/code&gt; package, our code would look like the following. Not so different: We want 5000 tweets containing the words gender and violence of any language and we want them put in the &lt;code&gt;tweets&lt;/code&gt; object. Note that here we have not told the twitter API to exclude retweets.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tweets &amp;lt;- searchTwitter(&amp;quot;gender+violence&amp;quot;, n=5000, lang=NULL)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We should now have our data and the next job, which should be the subject of my next post, is to manipulate it so that it can be ready to be used in quantitative text analysis. But before we go, I want to introduce another platform, which you can use to mine twitter data, especially for those who get a little bogged down by programming stuff. It has search and visualisation capabilities built within it. It is called &lt;a href=&#34;http://socialdatalab.net/COSMOS&#34;&gt;COSMOS&lt;/a&gt;, developed by the &lt;a href=&#34;http://socialdatalab.net/&#34;&gt;social data science lab&lt;/a&gt; at Cardiff University. It is free for academic institutions and not-for-profit organisations. The interface looks as follows and you will find demos on the website on how to collect and analyse the data. It is pretty straight forward and I highly recommend it.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/Users/simonasimona/cosmos.png&#34; alt=&#34;Cosmos interface.&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Cosmos interface.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>A gentle introduction to R</title>
@@ -153,189 +203,6 @@
       
       <guid>/publication/food-sup/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>/slides/example-slides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/slides/example-slides/</guid>
-      <description>
-
-&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code block:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-
-&lt;p&gt;Block math:&lt;/p&gt;
-
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-  One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  Three
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
