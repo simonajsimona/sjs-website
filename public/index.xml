@@ -34,7 +34,7 @@ library(rtweet)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class=&#34;caption&#34;&gt;Twitter developer app page.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the &lt;code&gt;rtweet&lt;/code&gt; package by Michael Kearney and the &lt;code&gt;twitteR&lt;/code&gt; package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user.&lt;/p&gt;
-&lt;p&gt;For the &lt;code&gt;rtweet&lt;/code&gt; package, we need to copy the credentials and put then in the &lt;code&gt;create_tocken&lt;/code&gt; function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.&lt;/p&gt;
+&lt;p&gt;For the &lt;code&gt;rtweet&lt;/code&gt; package, we need to copy the credentials and put then in the &lt;code&gt;create_token&lt;/code&gt; function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;token &amp;lt;- create_token(
   app = &amp;quot;simona_app&amp;quot;,
   consumer_key = &amp;quot;VocbltyHiK5F2VHnC4jRpmaT8&amp;quot;,
@@ -65,9 +65,29 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
-      <description>&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Session 1: Introduction to Statistical Programming&lt;br /&gt;
+*What is R
+*Why should we learn R
+*The R and RStudio Environment
+*Comments
+*Arithmetic in R
+*Objects and assignment operators
+*Vectors: basics
+*Functions and arguments
+*Data frames
+*R Packages&lt;/p&gt;
 
-&lt;p&gt;All materials for the workshop can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Session 2: Data Analysis
+*The working directory
+*Reading data into R
+*Inspecting data
+*A bit of indexing of data frames
+*Univariate descriptive statistics
+*Bivariate analysis
+*Multiple regression
+*Logistic regression
+Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

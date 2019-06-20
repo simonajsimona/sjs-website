@@ -31,7 +31,7 @@ After the app is created, it will appear on your screen and you should be able t
 
 Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the `rtweet` package by Michael Kearney and the `twitteR` package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user. 
 
-For the `rtweet` package, we need to copy the credentials and put then in the `create_tocken` function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.
+For the `rtweet` package, we need to copy the credentials and put then in the `create_token` function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.
 
 ```{r, eval=FALSE}
 token <- create_token(

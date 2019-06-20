@@ -17,8 +17,9 @@
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
-      <description>Download the introduction to R and installation instructions here
-All materials for the workshop can be downloaded here</description>
+      <description>Session 1: Introduction to Statistical Programming
+*What is R *Why should we learn R *The R and RStudio Environment *Comments *Arithmetic in R *Objects and assignment operators *Vectors: basics *Functions and arguments *Data frames *R Packages
+Session 2: Data Analysis *The working directory *Reading data into R *Inspecting data *A bit of indexing of data frames *Univariate descriptive statistics *Bivariate analysis *Multiple regression *Logistic regression Download the introduction to R and installation instructions here All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded here</description>
     </item>
     
     <item>

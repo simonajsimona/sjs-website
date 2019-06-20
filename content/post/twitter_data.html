@@ -24,7 +24,7 @@ library(rtweet)</code></pre>
 <p class="caption">Twitter developer app page.</p>
 </div>
 <p>Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the <code>rtweet</code> package by Michael Kearney and the <code>twitteR</code> package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user.</p>
-<p>For the <code>rtweet</code> package, we need to copy the credentials and put then in the <code>create_tocken</code> function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.</p>
+<p>For the <code>rtweet</code> package, we need to copy the credentials and put then in the <code>create_token</code> function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.</p>
 <pre class="r"><code>token &lt;- create_token(
   app = &quot;simona_app&quot;,
   consumer_key = &quot;VocbltyHiK5F2VHnC4jRpmaT8&quot;,
