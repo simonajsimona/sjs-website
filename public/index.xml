@@ -65,27 +65,33 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;br /&gt;
- *  What is R&lt;br /&gt;
- *  Why should we learn R&lt;br /&gt;
- *  The R and RStudio Environment&lt;br /&gt;
- *  Comments in R&lt;br /&gt;
- *  Arithmetic in R&lt;br /&gt;
- *  Objects and assignment operators&lt;br /&gt;
- *  Vectors: basics&lt;br /&gt;
- *  Functions and arguments&lt;br /&gt;
- *  Data frames&lt;br /&gt;
- *  R Packages&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Session 2: Data Analysis&lt;/strong&gt;&lt;br /&gt;
-   The working directory&lt;br /&gt;
-   Reading data into R&lt;br /&gt;
-   Inspecting data&lt;br /&gt;
-   A bit of indexing of data frames&lt;br /&gt;
-   Univariate descriptive statistics&lt;br /&gt;
-   Bivariate analysis&lt;br /&gt;
-   Multiple regression&lt;br /&gt;
-   Logistic regression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Why should we learn R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;The R and RStudio Environment&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Comments in R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Arithmetic in R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Objects and assignment operators&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Vectors: basics&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Functions and arguments&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Data frames&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;R Packages&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Session 2: Data Analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The working directory&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Reading data into R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Inspecting data&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;A bit of indexing of data frames&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Univariate descriptive statistics&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Bivariate analysis&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Multiple regression&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Logistic regression&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
 All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
