@@ -1,0 +1,70 @@
+---
+title: "Twitter Data Mining"
+author: "Simona Simona"
+date: 2019-06-19T21:13:14-05:00
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/) on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio [here](https://simonajsimona.com/R-Studio_Environment.pdf). We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven't installed R first as he installation document explains. Assuming everything is set, we will need the following suite of packages. We might as well begin by installing them. 
+
+```{r, eval=FALSE}
+install.packages("twitteR") # As the name indicate, it is used for capturing data from twitter
+install.packages("ROAuth") # You need to be authorised to get data from twitter, this package will serve that purpose
+install.packages("httr") # For requesting data from APIs
+install.packages("rtweet") # Another package we use to get data from twitter and analyse it
+library(twitteR)
+library(ROAuth)
+library(httr)
+library(rtweet)
+```
+
+After we are done with the packages, we will need credentials authorising us to access twitter data. It is important for us to have credentials so that twitter can control how much information we are gathering and that we do not abuse the platform. To do that, we need to create an app on the twitter developer site and we will use this app to call the twitter API. Click [here](https://developer.twitter.com/content/developer-twitter/en.html) to access the website or you can just Google *twitter developer platform* or any combination of words which have the words twitter and developer next to each other. We need to have a twitter for us to do this, which I assume we already have, otherwise why would we need to extract data from a community we don't belong to. On the developer platform, we will create a developer account (yes it is different from your main twitter account). Twitter will ask for your mobile number here. It is important for you to supply the correct number because they will use it for authentication. Click on the 'Create New App' once you sign in. It is located on the top right corner of the screen. Name and describe the app as you wish. The instructions are pretty straightforward. Some fields are mandatory. You will be requested to provide a website and callback URLs. You can provide your own website if you have one. Any website should suffice here. The callback URLs are not mandatory -- you can leave them blank.
+
+After the app is created, it will appear on your screen and you should be able to click on the 'details' button, to get a page that looks like a picture below. You can see the name of my app, description, my website URL and callback URL as indicated above. On the 'keys and tokens' tab, you will find the credentials that are needed for you to be authorised to collect data on twitter. I have chosen not to show that tab here because it contains my own credentials and I didn't want them exposed to anybody who reads this post. You also need to keep yours confidential because anyone can (mis)use them if they are exposed. They include API key, API secret key, Access token and Access token secret.
+
+![Twitter developer app page.](/Users/simonasimona/twitter.png)
+
+Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the `rtweet` package by Michael Kearney and the `twitteR` package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user. 
+
+For the `rtweet` package, we need to copy the credentials and put then in the `create_tocken` function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.
+
+```{r, eval=FALSE}
+token <- create_token(
+  app = "simona_app",
+  consumer_key = "VocbltyHiK5F2VHnC4jRpmaT8",
+  consumer_secret = "wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl",
+  access_token = "786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M",
+  access_secret = "y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu")
+```
+
+For the `twitteR` package, you just need the keys to be in the following format. The exact wording of the access token shouldn't matter much.
+
+```{r, eval=FALSE}
+api_key <- "VocbltyHiK5F2VHnC4jRpmaT8"
+api_secret <- "wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl"
+access_token <- "786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M"
+access_token_secret <- "y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu"
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
+```
+
+Assuming I want to examine gender-based violence discourses in virtual spaces and I want to collect 5000 tweets which make reference to gender-based violence. The number is arbitrary, you can choose your own sample size here if you want depending on what you want to study. Below we specify the commands for requesting data from the twitter API using our credentials. For the `twitteR` package the key objects should appear in your global environment. The `retweet` package will only show the token object and environment in the variables section. 
+
+```{r, eval = FALSE}
+tweets <- search_tweets("gender violence", n = 5000, include_rts = FALSE )
+```
+
+The code from `rtweet` is pretty straightforward. It says we are looking for 5000 tweets which contain gender and violence anywhere in the tweets and we want our search results to be put in the object we have named `tweets`. The `search_tweets()` is the function which performs the job. The `include_rts=FALSE` bit means we don't want retweets to be included in our search. Specifying the same query in the `twitteR` package, our code would look like the following. Not so different: We want 5000 tweets containing the words gender and violence of any language and we want them put in the `tweets` object. Note that here we have not told the twitter API to exclude retweets.
+
+```{r, eval= FALSE}
+tweets <- searchTwitter("gender+violence", n=5000, lang=NULL)
+```
+
+We should now have our data and the next job, which should be the subject of my next post, is to manipulate it so that it can be ready to be used in quantitative text analysis. But before we go, I want to introduce another platform, which you can use to mine twitter data, especially for those who get a little bogged down by programming stuff. It has search and visualisation capabilities built within it. It is called [COSMOS](http://socialdatalab.net/COSMOS), developed by the [social data science lab](http://socialdatalab.net/) at Cardiff University. It is free for academic institutions and not-for-profit organisations. The interface looks as follows and you will find demos on the website on how to collect and analyse the data. It is pretty straight forward and I highly recommend it.
+
+![Cosmos interface.](/Users/simonasimona/cosmos.png)
+
