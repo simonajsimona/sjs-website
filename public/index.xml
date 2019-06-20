@@ -104,9 +104,32 @@ All materials for both sessions, including slides, scripts and data are in one f
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer-datamanip/</guid>
-      <description>&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Session 1. Data manipulation: Basics&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;A folder containing all the workshop materials is &lt;a href=&#34;https://simonajsimona.com/training/Data_manip.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The working directory&lt;/li&gt;
+&lt;li&gt;Reading data in R&lt;/li&gt;
+&lt;li&gt;Examining the data frame&lt;/li&gt;
+&lt;li&gt;Indexing the data frame&lt;/li&gt;
+&lt;li&gt;Changing variable types&lt;/li&gt;
+&lt;li&gt;Changing variable names&lt;/li&gt;
+&lt;li&gt;Recoding variables&lt;/li&gt;
+&lt;li&gt;The car package&lt;/li&gt;
+&lt;li&gt;Saving data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Session 2. Data manipulation: Subsetting and merging data&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Working directory&lt;/li&gt;
+&lt;li&gt;Reading in data&lt;/li&gt;
+&lt;li&gt;Examining the data frame&lt;/li&gt;
+&lt;li&gt;Subsetting data&lt;/li&gt;
+&lt;li&gt;Merging data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+A folder containing all the workshop materials is &lt;a href=&#34;https://simonajsimona.com/training/Data_manip.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -154,8 +177,6 @@ All materials for both sessions, including slides, scripts and data are in one f
       
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it &lt;a href=&#34;https://simonajsimona.com/R-Studio_Environment.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; if you need it. It also has basic R commands. The workshop schedule is &lt;a href=&#34;https://simonajsimona.com/training/unza-r-workshop.doc&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The folder containing lab handouts and datasets should be downloaded from here&lt;/p&gt;
 </description>
     </item>
     

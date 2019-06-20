@@ -16,6 +16,3 @@ linktitle = "Introduction to R (University of Zambia)"
 +++
 
 Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it [here](https://simonajsimona.com/R-Studio_Environment.pdf) if you need it. It also has basic R commands. The workshop schedule is [here](https://simonajsimona.com/training/unza-r-workshop.doc)
-
-The folder containing lab handouts and datasets should be downloaded from here
-

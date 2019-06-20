@@ -41,8 +41,9 @@
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer-datamanip/</guid>
-      <description>Download the introduction to R and installation instructions here
-A folder containing all the workshop materials is here</description>
+      <description>Session 1. Data manipulation: Basics
+ The working directory Reading data in R Examining the data frame Indexing the data frame Changing variable types Changing variable names Recoding variables The car package Saving data  Session 2. Data manipulation: Subsetting and merging data
+ Working directory Reading in data Examining the data frame Subsetting data Merging data  Download the introduction to R and installation instructions here A folder containing all the workshop materials is here</description>
     </item>
     
     <item>
@@ -51,8 +52,7 @@ A folder containing all the workshop materials is here</description>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/example/</guid>
-      <description>Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it here if you need it. It also has basic R commands. The workshop schedule is here
-The folder containing lab handouts and datasets should be downloaded from here</description>
+      <description>Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it here if you need it. It also has basic R commands. The workshop schedule is here</description>
     </item>
     
   </channel>
