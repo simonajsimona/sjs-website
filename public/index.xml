@@ -66,25 +66,25 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/
       
       <guid>/tutorial/sgss-summer/</guid>
       <description>&lt;p&gt;Session 1: Introduction to Statistical Programming&lt;br /&gt;
- - What is R
- - Why should we learn R
- - The R and RStudio Environment
- - Comments
- - Arithmetic in R
- - Objects and assignment operators
- - Vectors: basics
- - Functions and arguments
- - Data frames
+ - What is R&lt;br /&gt;
+ - Why should we learn R&lt;br /&gt;
+ - The R and RStudio Environment&lt;br /&gt;
+ - Comments in R&lt;br /&gt;
+ - Arithmetic in R&lt;br /&gt;
+ - Objects and assignment operators&lt;br /&gt;
+ - Vectors: basics&lt;br /&gt;
+ - Functions and arguments&lt;br /&gt;
+ - Data frames&lt;br /&gt;
  - R Packages&lt;/p&gt;
 
 &lt;p&gt;Session 2: Data Analysis&lt;br /&gt;
- - The working directory
- - Reading data into R
- - Inspecting data
- - A bit of indexing of data frames
- - Univariate descriptive statistics
- - Bivariate analysis
- - Multiple regression
+ - The working directory&lt;br /&gt;
+ - Reading data into R&lt;br /&gt;
+ - Inspecting data&lt;br /&gt;
+ - A bit of indexing of data frames&lt;br /&gt;
+ - Univariate descriptive statistics&lt;br /&gt;
+ - Bivariate analysis&lt;br /&gt;
+ - Multiple regression&lt;br /&gt;
  - Logistic regression&lt;/p&gt;
 
 &lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
