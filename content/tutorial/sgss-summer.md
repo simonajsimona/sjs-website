@@ -14,17 +14,17 @@ linktitle = "A gentle introduction to R (SGSSS)"
   parent = "Workshops"
   weight = 2
 +++
-**Session 1: Introduction to Statistical Programming** 
- + What is R  
- + Why should we learn R  
- + The R and RStudio Environment  
- + Comments in R   
- + Arithmetic in R    
- + Objects and assignment operators  
- + Vectors: basics  
- + Functions and arguments  
- + Data frames  
- + R Packages  
+**Session 1: Introduction to Statistical Programming**  
+ *  What is R  
+ *  Why should we learn R  
+ *  The R and RStudio Environment  
+ *  Comments in R   
+ *  Arithmetic in R    
+ *  Objects and assignment operators  
+ *  Vectors: basics  
+ *  Functions and arguments  
+ *  Data frames  
+ *  R Packages  
 
 **Session 2: Data Analysis**   
    The working directory  

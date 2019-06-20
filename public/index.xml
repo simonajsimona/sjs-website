@@ -65,17 +65,17 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;
- + What is R&lt;br /&gt;
- + Why should we learn R&lt;br /&gt;
- + The R and RStudio Environment&lt;br /&gt;
- + Comments in R&lt;br /&gt;
- + Arithmetic in R&lt;br /&gt;
- + Objects and assignment operators&lt;br /&gt;
- + Vectors: basics&lt;br /&gt;
- + Functions and arguments&lt;br /&gt;
- + Data frames&lt;br /&gt;
- + R Packages&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;br /&gt;
+ *  What is R&lt;br /&gt;
+ *  Why should we learn R&lt;br /&gt;
+ *  The R and RStudio Environment&lt;br /&gt;
+ *  Comments in R&lt;br /&gt;
+ *  Arithmetic in R&lt;br /&gt;
+ *  Objects and assignment operators&lt;br /&gt;
+ *  Vectors: basics&lt;br /&gt;
+ *  Functions and arguments&lt;br /&gt;
+ *  Data frames&lt;br /&gt;
+ *  R Packages&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Session 2: Data Analysis&lt;/strong&gt;&lt;br /&gt;
    The working directory&lt;br /&gt;
