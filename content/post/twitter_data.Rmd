@@ -65,6 +65,7 @@ tweets <- searchTwitter("gender+violence", n=5000, lang=NULL)
 ```
 
 We should now have our data and the next job, which should be the subject of my next post, is to manipulate it so that it can be ready to be used in quantitative text analysis. But before we go, I want to introduce another platform, which you can use to mine twitter data, especially for those who get a little bogged down by programming stuff. It has search and visualisation capabilities built within it. It is called [COSMOS](http://socialdatalab.net/COSMOS), developed by the [social data science lab](http://socialdatalab.net/) at Cardiff University. It is free for academic institutions and not-for-profit organisations. The interface looks as follows and you will find demos on the website on how to collect and analyse the data. It is pretty straight forward and I highly recommend it.
-
-![Cosmos interface.](static/post/cosmos.png)
+[image]
+image ="static/post/cosmos.png"
+caption = "Cosmos interface"
 
