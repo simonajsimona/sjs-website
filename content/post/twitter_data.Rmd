@@ -68,3 +68,4 @@ We should now have our data and the next job, which should be the subject of my 
 
 ![Cosmos interface.](/files/cosmos.png)
 
+For more information about Twitter data mining and everything computational social science, check out the [Summer Institute for Computational Social Science](https://compsocialscience.github.io/summer-institute/2019/teaching-learning-materials)
