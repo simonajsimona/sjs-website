@@ -58,7 +58,7 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/
     <item>
       <title>A gentle introduction to R</title>
       <link>/tutorial/sgss-summer/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>/tutorial/sgss-summer/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
@@ -97,7 +97,7 @@ All materials for both sessions, including slides, scripts and data are in one f
     <item>
       <title>Data manipulation with R</title>
       <link>/tutorial/sgss-summer-datamanip/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>/tutorial/sgss-summer-datamanip/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Session 1. Data manipulation: Basics&lt;/strong&gt;&lt;/p&gt;
@@ -132,7 +132,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Exploring Male Participation in Maternal Healthcare in a Patriarchal Population: An Agent-Based Model</title>
       <link>/publication/male-involvement/</link>
-      <pubDate>Sat, 06 Apr 2019 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>/publication/male-involvement/</guid>
       <description></description>
@@ -141,7 +141,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>PhD Thesis</title>
       <link>/project/internal-project/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 -0400</pubDate>
       
       <guid>/project/internal-project/</guid>
       <description>&lt;p&gt;My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.&lt;/p&gt;
@@ -169,7 +169,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Introduction to R (University of Zambia)</title>
       <link>/tutorial/example/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it &lt;a href=&#34;https://simonajsimona.com/R-Studio_Environment.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; if you need it. It also has basic R commands. The workshop schedule is &lt;a href=&#34;https://simonajsimona.com/training/unza-r-workshop.doc&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
@@ -179,7 +179,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Intimate Partner Violence (IPV) In Zambia: Sociodemographic Characteristics and Use of Maternal Healthcare</title>
       <link>/publication/intimate-violence/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
       
       <guid>/publication/intimate-violence/</guid>
       <description></description>
@@ -188,7 +188,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -198,7 +198,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>“Life at the River is a Living Hell:” Qualitative study of trauma, mental health, substance use and HIV risk behaviour among female fish traders from the Kafue Flatlands in Zambia</title>
       <link>/publication/risk-behaviour/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 -0500</pubDate>
       
       <guid>/publication/risk-behaviour/</guid>
       <description></description>
@@ -207,7 +207,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>A gentle introduction to R</title>
       <link>/talk/intro-to-r/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>/talk/intro-to-r/</guid>
       <description></description>
@@ -216,7 +216,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Data manipulation with R</title>
       <link>/talk/data-manip/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>/talk/data-manip/</guid>
       <description></description>
@@ -225,7 +225,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Introduction to R</title>
       <link>/talk/example/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>/talk/example/</guid>
       <description></description>
@@ -234,7 +234,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>A Qualitative study of migrant-related stressors, Psychological outcomes and HIV risk behaviour among truck drivers in Zambia</title>
       <link>/publication/truck-drivers/</link>
-      <pubDate>Thu, 01 Sep 2016 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 -0400</pubDate>
       
       <guid>/publication/truck-drivers/</guid>
       <description></description>
@@ -243,7 +243,7 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
     <item>
       <title>Influence of food supplements on test- ing for HIV and AIDS and adhering to treatment in a resource poor rural setting: A case of Chivuna, Southern Zambia</title>
       <link>/publication/food-sup/</link>
-      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 -0500</pubDate>
       
       <guid>/publication/food-sup/</guid>
       <description></description>
