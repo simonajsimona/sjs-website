@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Introduction to R: Data and Data Visualisation</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introduction to R: Data and Data Visualisation
+### <div style="white-space: pre-line;">Mr. Simona Simona, Dr. Lito Tsitou and Dr. Brian J. Fogarty
+Q-Step Centre,
+University of Glasgow
+
+(Originally prepared by Simona Simona, for the 2019 SGSSS Summer School)</div>
+### 5th August 2019
+
+---
+
+
+
+# Session 2: Data and Visualisation
+
+## Outline
+
+- The working directory
+- Reading data into R
+- Inspecting data
+- Variable Recoding and manipulation
+- Logic of `ggplot2`
+- Data Visualisation
+
+---
+
+## Working Directory
+
+- A working directory is a folder on our computer containing the R files. They could have other files too
+- An R session always has a working directory
+- We first need to know which one it is and then change it if necessary. 
+- We use the following code to see the path to the working directory for our current R session
+
+
+```r
+getwd() 
+```
+
+```
+## [1] "/Users/simonasimona/Courses/qstep_summer"
+```
+
+
+---
+## Set Working Directory
+
+To set a working directory, go to the `session` menu ----&gt; Set Working directory ----&gt; Choose Directory and then navigate to where the folder is and click `open` on the bottom right hand side of the pop-up window
+
+Alternatively, you can use the `setwd()` function. Make sure you provide the actual path to the folder as an argument.
+
+
+```r
+setwd("G:/Q-Step/Short Courses/Intro to R") 
+```
+
+
+- It should certainly be different on your computer. Just follow the path accordingly
+
+---
+## Reading in data
+
+Data are most of the time read into R in form of data frames
+
+We are going to use the 2014 Scottish Social Attitudes dataset and we use the following code
+
+Note: the code will not work if the working directory is not correctly set
+
+
+
+
+```r
+data &lt;- read.dta("2014 Scottish Social Attitudes.dta") # reads data in
+```
+
+
+```r
+names(data) # gives you the names of all the variables
+```
+
+```
+##  [1] "pserial"        "rsex"           "rage"           "incsour"       
+##  [5] "leftrigh"       "libauth"        "employment"     "employmentdum" 
+##  [9] "PtyAllgS_NoNa"  "GovTrust_NoNa"  "TaxSpend_NoNa"  "ECPolicy_NoNa" 
+## [13] "LetIn_NoNa"     "EvCameron_NoNa" "EvSalmond_NoNa" "Knowind_NoNa"  
+## [17] "liklyvt_NoNa"   "Refvote_NoNa"   "SEBenGB_NoNa"   "RefvoteDum"    
+## [21] "UKSpenGB_NoNa"  "ScotID_NoNa"    "HEdQual2_NoNa"  "Party_Labels"  
+## [25] "PartyFW_NoNa"   "Dole_NoNa"
+```
+---
+
+## Inspecting the data
+
+How many observations and variables are there in your dataset, dimension 1 is the number of observations and dimension 2 the number of variables
+
+
+```r
+dim(data)    # dimensions
+```
+
+```
+## [1] 1501   26
+```
+
+
+```r
+str(data)    # gives the basic structure of the data frame
+```
+
+```
+## 'data.frame':	1501 obs. of  26 variables:
+##  $ pserial       : int  151343 151856 151537 151369 152010 151793 151589 151792 152332 152417 ...
+##  $ rsex          : Factor w/ 5 levels "Not applicable",..: 2 3 2 2 3 3 3 2 2 3 ...
+##  $ rage          : int  31 41 53 39 43 60 86 49 43 53 ...
+##  $ incsour       : Factor w/ 5 levels "Not applicable",..: 3 3 3 2 2 3 2 3 2 3 ...
+##  $ leftrigh      : num  1.2 1.8 2 1.8 2.4 1.8 1 2.4 2 2.4 ...
+##  $ libauth       : num  2.83 3.5 4 4.67 3.83 ...
+##  $ employment    : Factor w/ 7 levels "1. Full-Time Education",..: 3 3 3 5 7 3 6 3 4 3 ...
+##  $ employmentdum : Factor w/ 2 levels "0. Unemployed",..: 2 2 2 NA NA 2 NA 2 1 2 ...
+##  $ PtyAllgS_NoNa : int  5 5 4 5 NA NA 4 4 12 12 ...
+##  $ GovTrust_NoNa : int  4 3 4 4 4 NA 4 3 4 4 ...
+##  $ TaxSpend_NoNa : int  2 3 2 3 2 3 3 3 NA 3 ...
+##  $ ECPolicy_NoNa : int  5 NA 4 1 2 2 2 2 2 2 ...
+##  $ LetIn_NoNa    : int  5 4 5 5 1 5 5 3 5 5 ...
+##  $ EvCameron_NoNa: int  2 2 5 0 4 5 0 5 0 0 ...
+##  $ EvSalmond_NoNa: int  5 4 3 5 5 6 0 1 6 0 ...
+##  $ Knowind_NoNa  : int  4 4 2 3 4 4 5 3 3 4 ...
+##  $ liklyvt_NoNa  : int  10 10 10 10 10 7 10 10 10 0 ...
+##  $ Refvote_NoNa  : int  1 3 2 1 3 3 2 2 3 2 ...
+##  $ SEBenGB_NoNa  : int  1 1 1 1 1 1 1 2 1 NA ...
+##  $ RefvoteDum    : Factor w/ 2 levels "0. Vote No","1. Vote Yes": 2 NA 1 2 NA NA 1 1 NA 1 ...
+##  $ UKSpenGB_NoNa : int  5 4 4 5 5 NA 5 3 5 5 ...
+##  $ ScotID_NoNa   : int  7 6 4 6 7 7 7 7 7 7 ...
+##  $ HEdQual2_NoNa : int  4 8 8 5 NA 8 8 4 8 8 ...
+##  $ Party_Labels  : Factor w/ 6 levels "1. Conservative",..: 2 2 2 2 NA NA 2 2 4 4 ...
+##  $ PartyFW_NoNa  : num  2 2 2 2 NA NA 2 2 4 4 ...
+##  $ Dole_NoNa     : num  1 NA 2 1 1 NA 2 2 1 NA ...
+##  - attr(*, "datalabel")= chr ""
+##  - attr(*, "time.stamp")= chr "11 Nov 2017 20:21"
+##  - attr(*, "formats")= chr  "%12.0g" "%8.0g" "%8.0g" "%8.0g" ...
+##  - attr(*, "types")= int  253 251 251 251 255 255 251 251 251 251 ...
+##  - attr(*, "val.labels")= chr  "" "rsex" "rage" "incsour" ...
+##  - attr(*, "var.labels")= chr  "ARCHIVE SERIAL NUMBER" "Respondent sex " "Respondent's age last birthday " "Main income source - COLLAPSED DV" ...
+##  - attr(*, "version")= int 12
+##  - attr(*, "label.table")=List of 9
+##   ..$ Party_Labels : Named int  1 2 3 4 5 6
+##   .. ..- attr(*, "names")= chr  "1. Conservative" "2. Labour" "3. Liberal Democrat" "4. SNP" ...
+##   ..$ rsex         : Named int  -1 1 2 8 9
+##   .. ..- attr(*, "names")= chr  "Not applicable" "Male" "Female" "Don't know" ...
+##   ..$ rage         : Named int  -1 98 99
+##   .. ..- attr(*, "names")= chr  "Not applicable" "Don't know" "Refused"
+##   ..$ incsour      : Named int  -1 1 2 98 99
+##   .. ..- attr(*, "names")= chr  "Not applicable" "State Benefits" "Wages/private income source" "DK" ...
+##   ..$ leftrigh     : Named int  -1 1 5 9
+##   .. ..- attr(*, "names")= chr  "Not applicable" "left" "right" "Missing values"
+##   ..$ libauth      : Named int  -1 1 5 9
+##   .. ..- attr(*, "names")= chr  "Not applicable" "libertarian" "authoritarian" "Missing values"
+##   ..$ employment   : Named int  1 2 3 4 5 6 7
+##   .. ..- attr(*, "names")= chr  "1. Full-Time Education" "2. Gov/Empl Training" "3. Employed" "4. Unemployed" ...
+##   ..$ employmentdum: Named int  0 1
+##   .. ..- attr(*, "names")= chr  "0. Unemployed" "1. Employed"
+##   ..$ RefvoteDum   : Named int  0 1
+##   .. ..- attr(*, "names")= chr  "0. Vote No" "1. Vote Yes"
+```
+---
+## Inspecting the data
+
+
+```r
+head(data)   # first 6 rows
+```
+
+```
+##   pserial   rsex rage                     incsour leftrigh  libauth
+## 1  151343   Male   31 Wages/private income source      1.2 2.833333
+## 2  151856 Female   41 Wages/private income source      1.8 3.500000
+## 3  151537   Male   53 Wages/private income source      2.0 4.000000
+## 4  151369   Male   39              State Benefits      1.8 4.666667
+## 5  152010 Female   43              State Benefits      2.4 3.833333
+## 6  151793 Female   60 Wages/private income source      1.8 3.833333
+##                     employment employmentdum PtyAllgS_NoNa GovTrust_NoNa
+## 1                  3. Employed   1. Employed             5             4
+## 2                  3. Employed   1. Employed             5             3
+## 3                  3. Employed   1. Employed             4             4
+## 4 5. Permanently Sick/Disabled          &lt;NA&gt;             5             4
+## 5                 7. Homemaker          &lt;NA&gt;            NA             4
+## 6                  3. Employed   1. Employed            NA            NA
+##   TaxSpend_NoNa ECPolicy_NoNa LetIn_NoNa EvCameron_NoNa EvSalmond_NoNa
+## 1             2             5          5              2              5
+## 2             3            NA          4              2              4
+## 3             2             4          5              5              3
+## 4             3             1          5              0              5
+## 5             2             2          1              4              5
+## 6             3             2          5              5              6
+##   Knowind_NoNa liklyvt_NoNa Refvote_NoNa SEBenGB_NoNa  RefvoteDum
+## 1            4           10            1            1 1. Vote Yes
+## 2            4           10            3            1        &lt;NA&gt;
+## 3            2           10            2            1  0. Vote No
+## 4            3           10            1            1 1. Vote Yes
+## 5            4           10            3            1        &lt;NA&gt;
+## 6            4            7            3            1        &lt;NA&gt;
+##   UKSpenGB_NoNa ScotID_NoNa HEdQual2_NoNa Party_Labels PartyFW_NoNa
+## 1             5           7             4    2. Labour            2
+## 2             4           6             8    2. Labour            2
+## 3             4           4             8    2. Labour            2
+## 4             5           6             5    2. Labour            2
+## 5             5           7            NA         &lt;NA&gt;           NA
+## 6            NA           7             8         &lt;NA&gt;           NA
+##   Dole_NoNa
+## 1         1
+## 2        NA
+## 3         2
+## 4         1
+## 5         1
+## 6        NA
+```
+---
+
+## Inspecting the data
+
+
+```r
+tail(data)   # last 6 rows
+```
+
+```
+##      pserial   rsex rage                     incsour leftrigh   libauth
+## 1496  152055   Male   82 Wages/private income source      2.4  3.833333
+## 1497  152298 Female   46 Wages/private income source      2.2  4.166667
+## 1498  151231   Male   66              State Benefits     -1.0 -1.000000
+## 1499  151993 Female   44              State Benefits      2.4  4.333333
+## 1500  152163 Female   46 Wages/private income source      1.6  2.666667
+## 1501  151183   Male   40 Wages/private income source      2.8  3.333333
+##        employment employmentdum PtyAllgS_NoNa GovTrust_NoNa TaxSpend_NoNa
+## 1496   6. Retired          &lt;NA&gt;             7             3             2
+## 1497  3. Employed   1. Employed             7             3             3
+## 1498   6. Retired          &lt;NA&gt;            NA             3             3
+## 1499 7. Homemaker          &lt;NA&gt;            10             4             2
+## 1500  3. Employed   1. Employed             4             4             3
+## 1501  3. Employed   1. Employed            12             4             2
+##      ECPolicy_NoNa LetIn_NoNa EvCameron_NoNa EvSalmond_NoNa Knowind_NoNa
+## 1496             2          4              5              3            3
+## 1497             2          5              7              3            4
+## 1498            NA          3              5              4            4
+## 1499             5         NA              2             10            4
+## 1500             3          3              2              6            3
+## 1501             2          4              5              5            3
+##      liklyvt_NoNa Refvote_NoNa SEBenGB_NoNa  RefvoteDum UKSpenGB_NoNa
+## 1496           10            2            3  0. Vote No             3
+## 1497           10            2            2  0. Vote No             3
+## 1498            3            4            1        &lt;NA&gt;             4
+## 1499           10            1            3 1. Vote Yes             5
+## 1500           10            2            3  0. Vote No             3
+## 1501           10            1            1 1. Vote Yes             3
+##      ScotID_NoNa HEdQual2_NoNa        Party_Labels PartyFW_NoNa Dole_NoNa
+## 1496           7             8 3. Liberal Democrat            3         2
+## 1497           7             5 3. Liberal Democrat            3         2
+## 1498           7             8                &lt;NA&gt;           10         1
+## 1499           4             8              4. SNP            4         2
+## 1500           5             2           2. Labour            2         1
+## 1501           5             3              4. SNP            4         2
+```
+---
+
+
+## The dollar sign $
+
+It is used to extract a variable from an R data frame
+
+
+```r
+data$rsex # gets the respondent sex column from the data frame
+```
+
+
+```r
+data$leftrigh # gets the ideology variable from the data frame
+```
+
+---
+## Exercise 1
+
+1. Set your working directory
+1. Read in the Scottish Social Attitudes data from your working directory and name it "data"
+1. Check the names of the variables in the dataset
+
+---
+
+## Data Manipulation and Recoding
+
+We often want to recode or manipulate our variables in some manner
+
+There are a ton of different ways to do this - doesn't matter how as long as you get it right!
+
+We will look briefly at the `car`, but `dplyr` is the sexier newer way of doing recoding
+
+The `car` package and the function `recode()` is similar to recoding in Stata
+
+(Note: the `car` package doesn't always like Macs. Try to install `car` with `dependencies=TRUE` if it gives you problems)
+
+---
+
+## Car Package and Recode Function
+
+Generally, all recoding functions use a variant of specifying the original variable values and then specifying what the values should be in the new version
+
+We also usually create a new variable with the recoded values - so as not to mess up the original variable
+
+Sometimes we want to create a new version of a variable before recoding if the original labels are lengthy
+
+Let's look at an example with `Party_Labels`
+
+```r
+table(data$Party_Labels)
+```
+
+```
+## 
+##     1. Conservative           2. Labour 3. Liberal Democrat 
+##                 191                 443                  70 
+##              4. SNP      5. Green Party             6. UKIP 
+##                 363                  42                  37
+```
+
+---
+##Car Package and Recode Function
+
+
+```r
+data$partyid &lt;- as.numeric(data$Party_Labels)
+table(data$partyid)
+```
+
+```
+## 
+##   1   2   3   4   5   6 
+## 191 443  70 363  42  37
+```
+
+```r
+library(car)
+data$partyid &lt;- recode(data$partyid, "1='1. Cons'; 2='2. Lab'; 3='3. Lib Dems';
+                       4='4. SNP';5='5. Greens'; 6='6. UKIP'", as.factor=TRUE) 
+
+table(data$partyid)
+```
+
+```
+## 
+##     1. Cons      2. Lab 3. Lib Dems      4. SNP   5. Greens     6. UKIP 
+##         191         443          70         363          42          37
+```
+
+---
+
+##Plyr Package and Mapvalues Function
+
+The `plyr` package has been replaced by `dplyr`, but I still use it b/c I like the `mapvalues()` function
+
+The logic of the code is similar to the `recode()` function
+
+Let's look at `Party_Labels` again
+
+```r
+library(plyr)
+
+data$partyid1 &lt;- as.numeric(data$Party_Labels)
+table(data$partyid1)
+```
+
+```
+## 
+##   1   2   3   4   5   6 
+## 191 443  70 363  42  37
+```
+
+---
+##Plyr Package and Mapvalues Function
+
+```r
+data$partyid1 &lt;- as.factor(mapvalues(data$partyid1, from = c("1", "2", "3", "4", "5",                                                                  "6"),
+                   to = c("1. Cons", "2. Lab", "3. Lib Dems", "4. SNP",
+                          "5. Greens", "6. UKIP")))
+
+table(data$partyid1)
+```
+
+```
+## 
+##     1. Cons      2. Lab 3. Lib Dems      4. SNP   5. Greens     6. UKIP 
+##         191         443          70         363          42          37
+```
+
+---
+
+## Visualisation with ggplot2
+
+R comes with its own visualisation facility, but we shall only work with the `ggplot2` package here bacuse it provides much more fancier plots than base R
+
+Developed by Hadley Wickham, `ggplot2` has massively improved R's built-in graphical displays
+
+
+The learning curve is a bit steep with but the effort is worth it
+
+
+For more info, see Wickham's 2009 book *ggplot2: Elegant Graphics for Data Analysis* (somewhat outdated) and the newer 2017 book [R for Data Science](https://r4ds.had.co.nz/exploratory-data-analysis.html)
+
+---
+
+##Logic of ggplot2
+
+The key to ggplot is to think of plots as layers of various elements
+
+
+We start with `ggplot()` that sets the environment
+
+---
+##Logic of ggplot2
+
+```r
+library(ggplot2)
+ggplot(data=data)
+```
+
+![](Intro_to_R_2_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
+
+---
+
+##Logic of ggplot2
+
+The key to ggplot is to think of plots as layers of various elements
+
+
+We start with `ggplot()` that sets the environment
+
+
+Then we add layers using `\(+\)`
+  
+
+Geometric objects make up the core elements - all starting as `geom()`
+
+We use `mapping=` to specify the axes
+
+We use `aes()`, which stands for aesthetics, to specify the variables
+
+Anything else we want to do is just added as an additional layer - for example:
+  - Labels: `labs()`
+  - Themes: `theme()`
+
+You will have time to explore this in the handout later
+
+---
+##Example: Bar Plots with 2 Variables
+
+
+
+
+```r
+library(ggplot2)
+ggplot(data = data2) +
+  geom_bar(mapping = aes(partyid, fill=trust)) +
+  labs(x="Party Identification", y="Frequency",
+       title="Respondent Party Identification by 
+              Government Trust",  fill="Govt Trust") +
+  theme(
+    plot.title = element_text(size=16, face="bold"),
+    axis.title.x = element_text(size=14),
+    axis.title.y = element_text(size=14),
+    legend.title = element_text(size=14)
+  )
+```
+
+---
+##Example: Bar Plots with 2 Variables
+![](Intro_to_R_2_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
+
+---
+##Example: Smoothed Density with 2 Variables
+
+We will switch datasets to the 2016 Scottish Index of Multiple Deprivation (`simd.csv`) - datazone is the unit of analysis
+
+We'll look at variables for percentage of psychiatric prescriptions and urban/rural datazones
+
+
+
+
+
+```r
+ggplot(data=simd) +
+  geom_density(mapping = aes(pct_depress, fill=urban), alpha=1/5) +
+  labs(x="Percentage Prescribed Psychiatric Medication",y="Density",
+       title="Psychiatric Medication by Urban/Rural Scottish Datazones",
+       fill="Community Type")
+```
+
+---
+##Example: Smoothed Density with 2 Variables
+![](Intro_to_R_2_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+
+---
+
+##Example: Scatterplots with 3 Variables
+
+```r
+ggplot(data=simd) +
+  geom_point(mapping=aes(x=pct_employment_deprived,
+            y=pct_depress, colour=urban),
+            position="jitter") +
+  labs(x="Percentage Employment Deprived",
+    y="Percentage Prescribed Psychiatric Medication",
+    title="Percentage Prescribed Psychiatric Medication
+          by Percentage Employment Deprived",
+    subtitle="by Community Type",
+    colour="Community Type") 
+```
+
+---
+
+##Scatterplots with 3 Variables
+![](Intro_to_R_2_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
+
+---
+## Handout
+
+Now, with the remaining time, go through the handout on doing data visualisation
+
+
+## References
+
+Boehmke, B. 2016. *Data Wrangligh with R*. Cham: Springer
+
+Fogarty, B. 2018. *Quantitative Social Science Data with R*. London: Sage Publication
+
+---
+class: inverse, middle, center
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
