@@ -23,7 +23,7 @@ materials = "The folder for all materials are on this page"
 materials_url = "https://simonajsimona.com/tutorial/sgss-summer/"
 
 # Abstract. What's your talk about?
-abstract = "Approximately 80% of the data analyst’s time is often spent on data manipulation – which is the process of getting data from various sources, cleaning and transforming it for analysis and visualisation purposes. In fact, the usefulness of data depends on the analyst’s ability to manipulate it. This session introduces participants to facilities available in R to turn messy and unrefined raw data into clear and actionable bits of information. It builds on top of a gentle introduction to R introduced earlier. We shall look at some of the most common data manipulation procedures like reading, recoding, subsetting, merging and saving data"
+abstract = "Approximately 80% of the data analyst’s time is often spent on data manipulation – which is the process of getting data from various sources, cleaning and transforming it for analysis and visualisation purposes. In fact, the usefulness of data depends on the analyst’s ability to manipulate it. This session introduces participants to facilities available in R to turn messy and unrefined raw data into clear and actionable bits of information. It builds on top of a gentle introduction to R introduced earlier. We shall look at some of the most common data manipulation procedures like reading, recoding, subsetting, merging and saving data. Workshop outline and materials are [here](https://simonajsimona.com/tutorial/sgss-summer-datamanip/)"
 
 # Summary. An optional shortened abstract.
 #summary = "An example talk using Academic's Markdown slides feature."
