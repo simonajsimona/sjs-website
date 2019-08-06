@@ -47,6 +47,29 @@
     </item>
     
     <item>
+      <title>Introduction to R</title>
+      <link>/tutorial/qstep-summer/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/qstep-summer/</guid>
+      <description>Session 1: Introduction to Statistical Programming
+ What is R
+ Why should we learn R
+ The R and RStudio Environment
+ Comments in R
+ Arithmetic in R
+ Objects and assignment operators
+ Vectors: basics
+ Functions and arguments
+ Data frames
+ R Packages
+  Session 2: Introduction to R: Data and Data Visualisation
+ The working directory
+ Reading data into R
+ Inspecting data</description>
+    </item>
+    
+    <item>
       <title>Introduction to R (University of Zambia)</title>
       <link>/tutorial/example/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
