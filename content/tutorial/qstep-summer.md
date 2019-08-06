@@ -1,7 +1,7 @@
 +++
 title = "Introduction to R"
 
-date = 2019-06-11T00:00:00
+date = 2019-07-06T00:00:00
 # lastmod = 2019-04-09T00:00:00
 
 draft = false  # Is this a draft? true/false

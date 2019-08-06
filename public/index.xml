@@ -6,8 +6,45 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jun 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to R</title>
+      <link>/tutorial/qstep-summer/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/qstep-summer/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Why should we learn R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;The R and RStudio Environment&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Comments in R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Arithmetic in R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Objects and assignment operators&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Vectors: basics&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Functions and arguments&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Data frames&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;R Packages&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Session 2: Introduction to R: Data and Data Visualisation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The working directory&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Reading data into R&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Inspecting data&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Variable Recoding and manipulation&lt;/li&gt;
+&lt;li&gt;Logic of &lt;code&gt;ggplot2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Data Visualisation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/qstep_summ_sch.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Twitter Data Mining</title>
@@ -131,43 +168,6 @@ All materials for both sessions, including slides, scripts and data are in one f
 
 &lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
 A folder containing all the workshop materials is &lt;a href=&#34;https://simonajsimona.com/training/Data_manip.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction to R</title>
-      <link>/tutorial/qstep-summer/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/tutorial/qstep-summer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Why should we learn R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;The R and RStudio Environment&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Comments in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Arithmetic in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Objects and assignment operators&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Vectors: basics&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Functions and arguments&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Data frames&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;R Packages&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Session 2: Introduction to R: Data and Data Visualisation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The working directory&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Reading data into R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Inspecting data&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Variable Recoding and manipulation&lt;/li&gt;
-&lt;li&gt;Logic of &lt;code&gt;ggplot2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Data Visualisation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
-All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/qstep_summ_sch.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

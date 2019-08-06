@@ -12,6 +12,29 @@
     
     
     <item>
+      <title>Introduction to R</title>
+      <link>/tutorial/qstep-summer/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/qstep-summer/</guid>
+      <description>Session 1: Introduction to Statistical Programming
+ What is R
+ Why should we learn R
+ The R and RStudio Environment
+ Comments in R
+ Arithmetic in R
+ Objects and assignment operators
+ Vectors: basics
+ Functions and arguments
+ Data frames
+ R Packages
+  Session 2: Introduction to R: Data and Data Visualisation
+ The working directory
+ Reading data into R
+ Inspecting data</description>
+    </item>
+    
+    <item>
       <title>A gentle introduction to R</title>
       <link>/tutorial/sgss-summer/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
@@ -44,29 +67,6 @@
       <description>Session 1. Data manipulation: Basics
  The working directory Reading data in R Examining the data frame Indexing the data frame Changing variable types Changing variable names Recoding variables The car package Saving data  Session 2. Data manipulation: Subsetting and merging data
  Working directory Reading in data Examining the data frame Subsetting data Merging data  Download the introduction to R and installation instructions here A folder containing all the workshop materials is here</description>
-    </item>
-    
-    <item>
-      <title>Introduction to R</title>
-      <link>/tutorial/qstep-summer/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/tutorial/qstep-summer/</guid>
-      <description>Session 1: Introduction to Statistical Programming
- What is R
- Why should we learn R
- The R and RStudio Environment
- Comments in R
- Arithmetic in R
- Objects and assignment operators
- Vectors: basics
- Functions and arguments
- Data frames
- R Packages
-  Session 2: Introduction to R: Data and Data Visualisation
- The working directory
- Reading data into R
- Inspecting data</description>
     </item>
     
     <item>
