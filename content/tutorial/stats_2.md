@@ -9,18 +9,18 @@ toc = true  # Show table of contents? true/false
 type = "docs"  # Do not modify.
 
 # Add menu entry to sidebar.
-linktitle = "Applied Statistics"
+linktitle = "Applied Statistics 2 (Simona Simona)"
 [menu.tutorial]
   parent = "Workshops"
   weight = 2
 +++
 **Session 2: Applied Statistics**
-* Inference and the role of probability  
-* Hypothesis testing  
-* 1-way ANOVA  
-* Chi-squared tests  
-* Correlation  
-* Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking  
-* Outlook
+ *  Inference and the role of probability      
+ *  Hypothesis testing    
+ *  1-way ANOVA    
+ *  Chi-squared tests    
+ *  Correlation    
+ *  Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking    
+ *  Outlook
 
 You may download the slides [here](https://simonajsimona.com/training/Applied_Statistics_Day 2.pdf) and the folder that containing the data and SPSS work book for this session [here](https://simonajsimona.com/training/Course_Data.zip)
