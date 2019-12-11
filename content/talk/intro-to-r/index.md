@@ -15,7 +15,7 @@ all_day = false
 location = "John McIntyre Conference Centre, Edinburgh"
 
 # Name of event and optional event URL.
-event = "Scottish Graduate School of Social Science Summer School "
+event = "Scottish Graduate School of Social Science Summer School"
 event_url = "https://www.sgsss.ac.uk/summer-school-2019/"
 
 # Abstract. What's your talk about?
