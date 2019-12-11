@@ -6,8 +6,27 @@
     <description>Recent content in SIMONA SIMONA on SIMONA SIMONA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Applied Statistics 2</title>
+      <link>/tutorial/stats_2/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/stats_2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Session 2: Applied Statistics&lt;/strong&gt;
+* Inference and the role of probability&lt;br /&gt;
+* Hypothesis testing&lt;br /&gt;
+* 1-way ANOVA&lt;br /&gt;
+* Chi-squared tests&lt;br /&gt;
+* Correlation&lt;br /&gt;
+* Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking&lt;br /&gt;
+* Outlook&lt;/p&gt;
+
+&lt;p&gt;You may download the slides &lt;a href=&#34;https://simonajsimona.com/training/Applied_Statistics_Day 2.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and the folder that containing the data and SPSS work book for this session &lt;a href=&#34;https://simonajsimona.com/training/Course_Data.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Applied Statistics 1</title>
@@ -283,15 +302,6 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>/talk/intro-to-r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data manipulation with R</title>
-      <link>/talk/data-manip/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/data-manip/</guid>
       <description></description>
     </item>
     

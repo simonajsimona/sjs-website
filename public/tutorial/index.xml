@@ -12,6 +12,22 @@
     
     
     <item>
+      <title>Applied Statistics 2</title>
+      <link>/tutorial/stats_2/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/stats_2/</guid>
+      <description>Session 2: Applied Statistics * Inference and the role of probability
+* Hypothesis testing
+* 1-way ANOVA
+* Chi-squared tests
+* Correlation
+* Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking
+* Outlook
+You may download the slides here and the folder that containing the data and SPSS work book for this session here</description>
+    </item>
+    
+    <item>
       <title>Applied Statistics 1</title>
       <link>/tutorial/applied_star/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
