@@ -1,10 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     <url>
     
+      <loc>/publication_types/2/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/gender_relations/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/simona-simona/</loc>
       <lastmod>2019-12-24T00:00:00+00:00</lastmod>
     </url>
     
@@ -30,6 +77,14 @@
     
       <loc>/publication/structural/</loc>
       <lastmod>2019-12-06T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2019-07-19T21:13:14-05:00</lastmod>
     </url>
     
   
@@ -92,6 +147,14 @@
     
     <url>
     
+      <loc>/project/</loc>
+      <lastmod>2019-03-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/</loc>
       <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     </url>
@@ -108,8 +171,32 @@
     
     <url>
     
+      <loc>/categories/</loc>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/example/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/harriet-ntalasha/</loc>
+      <lastmod>2018-09-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -124,8 +211,64 @@
     
     <url>
     
+      <loc>/authors/mazuba-muchindu/</loc>
+      <lastmod>2018-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/baca-atlas-s/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/chery-mb/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/jiwatram-negron-t/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/michalopolous-lt/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/ncube-a/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/simona-js/</loc>
+      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -164,7 +307,63 @@
     
     <url>
     
+      <loc>/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/truck-drivers/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/kansankala-b/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/michalopoulos-lm/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/ncube-n/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/raidoo-j/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/simona-sj/</loc>
+      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/sinkala-e/</loc>
       <lastmod>2016-09-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -180,103 +379,8 @@
     
     <url>
     
-      <loc>/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/2/</loc>
-      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/baca-atlas-s/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/chery-mb/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/harriet-ntalasha/</loc>
-      <lastmod>2018-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/jiwatram-negron-t/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/kansankala-b/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/authors/malungo-jrs/</loc>
       <lastmod>2015-03-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/mazuba-muchindu/</loc>
-      <lastmod>2018-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -285,43 +389,6 @@
     
       <loc>/authors/merten-s/</loc>
       <lastmod>2015-03-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/michalopolous-lt/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/michalopoulos-lm/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ncube-n/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/ncube-a/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -330,6 +397,13 @@
     
       <loc>/authors/ntalasha-h/</loc>
       <lastmod>2015-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/author/admin/</loc>
       <priority>0</priority>
     </url>
     
@@ -337,105 +411,7 @@
     
     <url>
     
-      <loc>/post/</loc>
-      <lastmod>2019-07-19T21:13:14-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2019-03-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/</loc>
-      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2019-03-06T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/raidoo-j/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/simona-js/</loc>
-      <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/simona-sj/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/simona-simona/</loc>
-      <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/sinkala-e/</loc>
-      <lastmod>2016-09-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
+      <loc>/author/</loc>
     </url>
     
   
@@ -443,7 +419,6 @@
     <url>
     
       <loc>/slides/</loc>
-      <priority>0</priority>
     </url>
     
   
@@ -458,15 +433,6 @@
     <url>
     
       <loc>/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/sjs-website/</loc>
-      <priority>0</priority>
     </url>
     
   

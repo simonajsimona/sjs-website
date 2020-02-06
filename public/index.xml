@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SIMONA SIMONA on SIMONA SIMONA</title>
@@ -10,289 +9,40 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Gender Relations, Female Empowerment and Use of Maternal Health care in sub-Saharan Africa: A Multilevel Modelling Study</title>
-      <link>/publication/gender_relations/</link>
+      <title>Publications</title>
+      <link>/publication/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/publication/gender_relations/</guid>
+      <guid>/publication/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Applied Statistics 2</title>
-      <link>/tutorial/stats_2/</link>
-      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/stats_2/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 2: Applied Statistics&lt;/strong&gt;&lt;br /&gt;
- 1. Inference and the role of probability&lt;br /&gt;
- 2. Hypothesis testing&lt;br /&gt;
- 3. 1-way ANOVA&lt;br /&gt;
- 4. Chi-squared tests&lt;br /&gt;
- 5. Correlation&lt;br /&gt;
- 6. Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking&lt;br /&gt;
- 7. Outlook&lt;/p&gt;
-
-&lt;p&gt;You may download the slides &lt;a href=&#34;https://simonajsimona.com/training/Applied_Statistics_Day 2.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and the folder that containing the data and SPSS work book for this session &lt;a href=&#34;https://simonajsimona.com/training/Course_Data.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Applied Statistics 1</title>
-      <link>/tutorial/applied_star/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/applied_star/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Applied Statistics 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You may download the folder that contains all materials for this session &lt;a href=&#34;https://simonajsimona.com/training/Applied Statistics_1.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Researching the Influence of Structural Factors on Maternal Healthcare Utilisation in sub-Saharan Africa: A systematic review of Multilevel Models</title>
-      <link>/publication/structural/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/structural/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching Research Software and Statistical Programming to Social Science Students: A note to Instructors</title>
-      <link>/post/teaching/</link>
+      <title>Posts</title>
+      <link>/post/</link>
       <pubDate>Fri, 19 Jul 2019 21:13:14 -0500</pubDate>
       
-      <guid>/post/teaching/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Statistical programming and sofware more generally has become ubiquitous in the social sciences. I think it is fare to say that almost all social science students today will face the need to learn some kind of software at one or two points in their learning journey. The need for software and programming skills in our society has exponentiated in the past decade due to an avalance of data availability. The so called big data revolution is taking the world by storm and the social sciences will not be spared. There are already numerous attempts to bring the social science up to speed with the current tools being used in big data analytics. The consequences of these efforts is the shrinkage of the dividing lines between orthodox disciplines. The need of the hour is to have skills that cater across the disciplines. This means social scientists have to learn some skills typicall in other areas like statistics and computer science and those in other disciplines have to learn some aspects of social sciences. This hybridity has created an environment where everybody or at least those who would want to be counted in the new data dispensation, are on a learning spree. I believe social scientists have a bigger hurdle to learn skills like programming and software than computer scientists or statisticians learning social theory. This post is conceived in this regard. While I have neither the experience nor the right to tell instructors or anybody how to do their job, I have been a student long enough to know that some teaching approches don’t just work. This post is directed to me as much as it is to anybody else who is envolved in teaching programming to novice social scientists.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Teach yourself, dont teach others&lt;/strong&gt;. Whenerve you go in class to teach people, the best approach is to imagine you are a student and think about how you would want your teachers to present their materials to you. That way you will not take your role for granted but you will also conentrate and ensure that everybody understands your materials. Well! maybe not everyone but at least a good number or the majority if I can say so. You hve neever been ideal student. You have made do with only 10% of the materials that is presended in class. Giving your students all you have will help them under&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Capturing attention is key&lt;/strong&gt;. He who captures the attention of leaners can easily teach them anything. As an instuctor, you are competing with plenty of things in seeking attention from your students. Don’t assume that because they have voluntarily turned up or even paid for the session, then they all what to be there. Not necessarily! There are many factors that compel people to register for courses and interest in the course may or may not be one them. Some have registered in order to impress their supervisors or advisors because they suggected the course could be helpful in their data analsysi. Others may be there because they have a training allocation in their studentship budget and they have nothing better to spend their allowance on. Yet others would turn up for training because the course you are offering is mandatory in their programme of choice. They had a failed relationship with mathematics in high school and have spent proceding years avoiding anything that resembles mathematics. Your course is now standing on the way to their most valued degree. They figured a better choice is to close their eyes and drug along hoping to somehow land on softer soil. But even if they are enthusiastic and genuinely interested in learning, they are still not immune to distruction and discouragements especially when a few codes don’t seem to they fancy sitting next to in class. Yet some just do not have anything better to do. Your duty is to make sure that they come of your class with something new they have learne&lt;/p&gt;
-&lt;p&gt;How can you attract attensition from people. Personability is one of the key elements. Students need to know that you are not some genius who has fallen from extraterrential teritorries. You need to make an extra effort to give them an impression of your struggles as a student. It is fuel for them. They need to relate to the suffering you went through. Because that is only the true. You know how much you have spent sleepless nights to understand that code you speak so fluently now. Let them know that it takes time and that even now you actually dont know everything there is to know in terms of computer programming&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Dont teach students everything you know&lt;/strong&gt; Students needs incremental knowledge. Knowledge is cumulative and therefore if you&lt;/p&gt;
-&lt;p&gt;** Do not give them a script and walk around like a boss** They probably know how to read better than you do, they certainly didnt come to your class to read the materials on their own. If they wanted to read or if reading the materials could help them, believe it or not you are the last port of entry they would go for. There are plaenty of online materials out there which&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction to R</title>
-      <link>/tutorial/qstep-summer/</link>
-      <pubDate>Sat, 06 Jul 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/tutorial/qstep-summer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Why should we learn R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;The R and RStudio Environment&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Comments in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Arithmetic in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Objects and assignment operators&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Vectors: basics&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Functions and arguments&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Data frames&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;R Packages&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Session 2: Introduction to R: Data and Data Visualisation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The working directory&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Reading data into R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Inspecting data&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Variable Recoding and manipulation&lt;/li&gt;
-&lt;li&gt;Logic of &lt;code&gt;ggplot2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Data Visualisation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
-All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/qstep_summ_sch.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Twitter Data Mining</title>
-      <link>/post/twitter_data/</link>
-      <pubDate>Wed, 19 Jun 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/post/twitter_data/</guid>
-      <description>
-
-
-&lt;p&gt;In this post, I document the process and tools used to acquire data from the Twitter API. I will use the R statistical programming language through RStudio in this process. It is important that you install &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; on your machine, including all the accompanying packages specified here. Get documentation providing installation guides for both R and RStudio &lt;a href=&#34;https://simonajsimona.com/R-Studio_Environment.pdf&#34;&gt;here&lt;/a&gt;. We are going to use the RStudio environment for our data collection but of course it will not work properly if you haven’t installed R first as he installation document explains. Assuming everything is set, we will need the following suite of packages. We might as well begin by installing them.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;twitteR&amp;quot;) # As the name indicate, it is used for capturing data from twitter
-install.packages(&amp;quot;ROAuth&amp;quot;) # You need to be authorised to get data from twitter, this package will serve that purpose
-install.packages(&amp;quot;httr&amp;quot;) # For requesting data from APIs
-install.packages(&amp;quot;rtweet&amp;quot;) # Another package we use to get data from twitter and analyse it
-library(twitteR)
-library(ROAuth)
-library(httr)
-library(rtweet)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After we are done with the packages, we will need credentials authorising us to access twitter data. It is important for us to have credentials so that twitter can control how much information we are gathering and that we do not abuse the platform. To do that, we need to create an app on the twitter developer site and we will use this app to call the twitter API. Click &lt;a href=&#34;https://developer.twitter.com/content/developer-twitter/en.html&#34;&gt;here&lt;/a&gt; to access the website or you can just Google &lt;em&gt;twitter developer platform&lt;/em&gt; or any combination of words which have the words twitter and developer next to each other. We need to have a twitter for us to do this, which I assume we already have, otherwise why would we need to extract data from a community we don’t belong to. On the developer platform, we will create a developer account (yes it is different from your main twitter account). Twitter will ask for your mobile number here. It is important for you to supply the correct number because they will use it for authentication. Click on the ‘Create New App’ once you sign in. It is located on the top right corner of the screen. Name and describe the app as you wish. The instructions are pretty straightforward. Some fields are mandatory. You will be requested to provide a website and callback URLs. You can provide your own website if you have one. Any website should suffice here. The callback URLs are not mandatory – you can leave them blank.&lt;/p&gt;
-&lt;p&gt;After the app is created, it will appear on your screen and you should be able to click on the ‘details’ button, to get a page that looks like a picture below. You can see the name of my app, description, my website URL and callback URL as indicated above. On the ‘keys and tokens’ tab, you will find the credentials that are needed for you to be authorised to collect data on twitter. I have chosen not to show that tab here because it contains my own credentials and I didn’t want them exposed to anybody who reads this post. You also need to keep yours confidential because anyone can (mis)use them if they are exposed. They include API key, API secret key, Access token and Access token secret.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/files/twitter.png&#34; alt=&#34;Twitter developer app page.&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Twitter developer app page.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Now that we have our credentials in the bag, there are basically two packages in R (at least those I know of this far) we can use to harvest data from twitter: the &lt;code&gt;rtweet&lt;/code&gt; package by Michael Kearney and the &lt;code&gt;twitteR&lt;/code&gt; package by Jeff Gentry. Either should do the job perfectly well. I have included the procedure for both just in case one of them gives you problems. It is certainly not uncommon for packages to give you a few glitches here and there even if you are an experienced user.&lt;/p&gt;
-&lt;p&gt;For the &lt;code&gt;rtweet&lt;/code&gt; package, we need to copy the credentials and put then in the &lt;code&gt;create_token&lt;/code&gt; function in R. Please note that the credentials I am using here are only for illustrative purposes. But your credentials should look more or less like them.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;token &amp;lt;- create_token(
-  app = &amp;quot;simona_app&amp;quot;,
-  consumer_key = &amp;quot;VocbltyHiK5F2VHnC4jRpmaT8&amp;quot;,
-  consumer_secret = &amp;quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&amp;quot;,
-  access_token = &amp;quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&amp;quot;,
-  access_secret = &amp;quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For the &lt;code&gt;twitteR&lt;/code&gt; package, you just need the keys to be in the following format. The exact wording of the access token shouldn’t matter much.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;api_key &amp;lt;- &amp;quot;VocbltyHiK5F2VHnC4jRpmaT8&amp;quot;
-api_secret &amp;lt;- &amp;quot;wrwVFnoaRXZUYsCfrOJvEgUcZmKLsHasPQjVgz6HJHlTaDeM7uRl&amp;quot;
-access_token &amp;lt;- &amp;quot;786205049854307650-BvJaX0YUfVtDzOwfAslGyxRhr43Y9M&amp;quot;
-access_token_secret &amp;lt;- &amp;quot;y5Dxe9YsCOLKdCTOyRW6btR5KyTAHlssEN3WFSBvGjYtu&amp;quot;
-setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Assuming I want to examine gender-based violence discourses in virtual spaces and I want to collect 5000 tweets which make reference to gender-based violence. The number is arbitrary, you can choose your own sample size here if you want depending on what you want to study. Below we specify the commands for requesting data from the twitter API using our credentials. For the &lt;code&gt;twitteR&lt;/code&gt; package the key objects should appear in your global environment. The &lt;code&gt;retweet&lt;/code&gt; package will only show the token object and environment in the variables section.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tweets &amp;lt;- search_tweets(&amp;quot;gender violence&amp;quot;, n = 5000, include_rts = FALSE )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The code from &lt;code&gt;rtweet&lt;/code&gt; is pretty straightforward. It says we are looking for 5000 tweets which contain gender and violence anywhere in the tweets and we want our search results to be put in the object we have named &lt;code&gt;tweets&lt;/code&gt;. The &lt;code&gt;search_tweets()&lt;/code&gt; is the function which performs the job. The &lt;code&gt;include_rts=FALSE&lt;/code&gt; bit means we don’t want retweets to be included in our search. Specifying the same query in the &lt;code&gt;twitteR&lt;/code&gt; package, our code would look like the following. Not so different: We want 5000 tweets containing the words gender and violence of any language and we want them put in the &lt;code&gt;tweets&lt;/code&gt; object. Note that here we have not told the twitter API to exclude retweets.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tweets &amp;lt;- searchTwitter(&amp;quot;gender+violence&amp;quot;, n=5000, lang=NULL)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We should now have our data and the next job, which should be the subject of my next post, is to manipulate it so that it can be ready to be used in quantitative text analysis. But before we go, I want to introduce another platform, which you can use to mine twitter data, especially for those who get a little bogged down by programming stuff. It has search and visualisation capabilities built within it. It is called &lt;a href=&#34;http://socialdatalab.net/COSMOS&#34;&gt;COSMOS&lt;/a&gt;, developed by the &lt;a href=&#34;http://socialdatalab.net/&#34;&gt;social data science lab&lt;/a&gt; at Cardiff University. It is free for academic institutions and not-for-profit organisations. The interface looks as follows and you will find demos on the website on how to collect and analyse the data. It is pretty straight forward and I highly recommend it.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/files/cosmos.png&#34; alt=&#34;Cosmos interface.&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Cosmos interface.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;For more information about Twitter data mining and everything computational social science, check out the &lt;a href=&#34;https://compsocialscience.github.io/summer-institute/2019/teaching-learning-materials&#34;&gt;Summer Institute for Computational Social Science&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A gentle introduction to R</title>
-      <link>/tutorial/sgss-summer/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/tutorial/sgss-summer/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1: Introduction to Statistical Programming&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Why should we learn R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;The R and RStudio Environment&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Comments in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Arithmetic in R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Objects and assignment operators&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Vectors: basics&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Functions and arguments&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Data frames&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;R Packages&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Session 2: Data Analysis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The working directory&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Reading data into R&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Inspecting data&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;A bit of indexing of data frames&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Univariate descriptive statistics&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Bivariate analysis&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Multiple regression&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Logistic regression&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
-All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Data manipulation with R</title>
-      <link>/tutorial/sgss-summer-datamanip/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/tutorial/sgss-summer-datamanip/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Session 1. Data manipulation: Basics&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The working directory&lt;/li&gt;
-&lt;li&gt;Reading data in R&lt;/li&gt;
-&lt;li&gt;Examining the data frame&lt;/li&gt;
-&lt;li&gt;Indexing the data frame&lt;/li&gt;
-&lt;li&gt;Changing variable types&lt;/li&gt;
-&lt;li&gt;Changing variable names&lt;/li&gt;
-&lt;li&gt;Recoding variables&lt;/li&gt;
-&lt;li&gt;The car package&lt;/li&gt;
-&lt;li&gt;Saving data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Session 2. Data manipulation: Subsetting and merging data&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Working directory&lt;/li&gt;
-&lt;li&gt;Reading in data&lt;/li&gt;
-&lt;li&gt;Examining the data frame&lt;/li&gt;
-&lt;li&gt;Subsetting data&lt;/li&gt;
-&lt;li&gt;Merging data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Download the introduction to R and installation instructions &lt;a href=&#34;https://simonajsimona.com/training/Intro_to_R_and_Installation_Guide.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
-A folder containing all the workshop materials is &lt;a href=&#34;https://simonajsimona.com/training/Data_manip.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring Male Participation in Maternal Healthcare in a Patriarchal Population: An Agent-Based Model</title>
-      <link>/publication/male-involvement/</link>
-      <pubDate>Sat, 06 Apr 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/publication/male-involvement/</guid>
+      <guid>/post/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>PhD Thesis</title>
-      <link>/project/internal-project/</link>
+      <title>Projects</title>
+      <link>/project/</link>
       <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;My PhD research focusses on structural violence and (in)equities in maternal healthcare in sub-Saharan Africa. It is aimed at understanding the hierarchical and multiple-level social structure in which individual persons are nested and how these structures interact together to determine maternal healthcare disparities. I use the Demographic and Health Surveys (DHS) and the World Development Indicators (WDI) as primary data sources in my study. I have merged DHS and WDI data from 35 sub-Saharan African countries and I mainly apply Bayesian mixed effects models.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Building a website with Blogdown and R Markdown</title>
-      <link>/post/creating-website/</link>
-      <pubDate>Wed, 06 Mar 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/post/creating-website/</guid>
-      <description>
-
-
-&lt;div id=&#34;building-a-website&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Building a website&lt;/h1&gt;
-&lt;p&gt;It is always a good idea to spread the good news when you come across a fantastic resource to help others and also to give credit to those who have invested enormous amount of time and energy developing it. I made this website in RStudio, an open-source integrated development environment for R, using the blogdown package. I am still rusty in html, CSS and JavaScript, which are the languages commonly used to build websites ground-up. I have limited time to go through the procedure in full. I will thus point you to the wonderful resources that helped me in this process and if you follow them, you will be good to create your own website without my further assistance. The first place to start from is of course familiarising yourself with &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; and the blogdown package which you can read in the &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; book. You can buy the book if you want but it is also available for free online on that link I have provided. I guess the choice there is pretty obvious for most people. The blogdown package uses &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as the website generator. Hugo has plenty of &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes&lt;/a&gt;, which are basically your website designs. You can choose your preferred theme. My website uses the &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;academic theme&lt;/a&gt; because as you can tell, it is more suitable for academics and I happen to be one or at least, I am trying to.&lt;/p&gt;
-&lt;p&gt;The blogdown book is very clear and accessible but it might not be enough for you, depending on your mirage. You could complement it with a few other online resources. I found write-ups by the co-authors of the book to be very helpful. &lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt; is responsible for the creation of the blogdown package. So, this one you have to know and probably follow on Twitter or anywhere you can find him in online platforms. The answers he gives to questions he is asked on &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt;, github or his own website could serve you long hours of nightmares. Amber Thomas’s blog post about &lt;a href=&#34;https://amber.rbind.io/blog/2016/12/19/creatingsite/&#34;&gt;Making a website using R Markdown&lt;/a&gt; and Alison Presmanes Hill’s talk on &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;Up &amp;amp; Running with blogdown&lt;/a&gt; are equally nuggets of gold. Check them out. They also provide links to other resources accordingly. &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt;, &lt;a href=&#34;https://github.com/&#34;&gt;Githup&lt;/a&gt; and &lt;a href=&#34;https://www.netlify.com/&#34;&gt;netlify&lt;/a&gt; are other platforms you will need. It is better to familiarise yourself with them too.&lt;/p&gt;
-&lt;p&gt;Other than that I will recommend that you watch three videos on YouTube. The first is by Yihui himself. He pretty much explains the blogdown package in a one hour video. You can find it &lt;a href=&#34;https://www.youtube.com/watch?v=CjTLN-FXiFA&amp;amp;t=2183s&#34;&gt;here&lt;/a&gt;. The second is done by Daniel Quintana. He will show you how to actually setup your website, make changes to the default files and personalise your website. Find the video &lt;a href=&#34;https://www.youtube.com/watch?v=ox_Ue9yzf-0&amp;amp;t=903s&#34;&gt;here&lt;/a&gt;. Finally John Muschelli &lt;a href=&#34;https://www.youtube.com/watch?v=syWAKaj-4ck&#34;&gt;here&lt;/a&gt;. He casually goes through the deployment process, which you will find very useful. He also explains how to include domain names and attaching files to your website. That’s all I did for this website to be up. The only other thing you need is your intuition and a bit of some common sense and then you are good to go.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction to R (University of Zambia)</title>
-      <link>/tutorial/example/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/example/</guid>
-      <description>&lt;p&gt;Before the workshop begins, make you have downloaded and installed R on your machine. I have written a document containing instructions about downloading and installing R. Find it &lt;a href=&#34;https://simonajsimona.com/R-Studio_Environment.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; if you need it. It also has basic R commands. The workshop schedule is &lt;a href=&#34;https://simonajsimona.com/training/unza-r-workshop.doc&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Intimate Partner Violence (IPV) In Zambia: Sociodemographic Characteristics and Use of Maternal Healthcare</title>
-      <link>/publication/intimate-violence/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/publication/intimate-violence/</guid>
+      <guid>/project/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Workshops</title>
+      <link>/tutorial/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/</guid>
+      <description>&lt;p&gt;This page hosts documentation for all my workshops. In the sidebar, select the name of the workshop you are enrolled in and follow instructions accordingly&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -303,6 +53,33 @@ A folder containing all the workshop materials is &lt;a href=&#34;https://simona
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Authors</title>
+      <link>/author/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/author/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/</guid>
+      <description></description>
     </item>
     
   </channel>

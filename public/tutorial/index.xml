@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workshops on SIMONA SIMONA</title>
@@ -18,14 +18,7 @@
       
       <guid>/tutorial/stats_2/</guid>
       <description>Session 2: Applied Statistics
-1. Inference and the role of probability
-2. Hypothesis testing
-3. 1-way ANOVA
-4. Chi-squared tests
-5. Correlation
-6. Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking
-7. Outlook
-You may download the slides here and the folder that containing the data and SPSS work book for this session here</description>
+ Inference and the role of probability Hypothesis testing 1-way ANOVA Chi-squared tests Correlation Regression: simple linear regression, multiple linear regression, categorical explanatory variables in regression and diagnostic checking Outlook  You may download the slides [here](https://simonajsimona.com/training/Applied_Statistics_Day 2.pdf) and the folder that containing the data and SPSS work book for this session here</description>
     </item>
     
     <item>
@@ -35,7 +28,7 @@ You may download the slides here and the folder that containing the data and SPS
       
       <guid>/tutorial/applied_star/</guid>
       <description>Session 1: Applied Statistics 1
-You may download the folder that contains all materials for this session here</description>
+You may download the folder that contains all materials for this session [here](https://simonajsimona.com/training/Applied Statistics_1.zip)</description>
     </item>
     
     <item>
@@ -45,20 +38,8 @@ You may download the folder that contains all materials for this session here</d
       
       <guid>/tutorial/qstep-summer/</guid>
       <description>Session 1: Introduction to Statistical Programming
- What is R
- Why should we learn R
- The R and RStudio Environment
- Comments in R
- Arithmetic in R
- Objects and assignment operators
- Vectors: basics
- Functions and arguments
- Data frames
- R Packages
-  Session 2: Introduction to R: Data and Data Visualisation
- The working directory
- Reading data into R
- Inspecting data</description>
+ What is R Why should we learn R The R and RStudio Environment Comments in R Arithmetic in R Objects and assignment operators Vectors: basics Functions and arguments Data frames R Packages  Session 2: Introduction to R: Data and Data Visualisation
+ The working directory Reading data into R Inspecting data Variable Recoding and manipulation Logic of ggplot2 Data Visualisation  Download the introduction to R and installation instructions here All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded here</description>
     </item>
     
     <item>
@@ -68,21 +49,8 @@ You may download the folder that contains all materials for this session here</d
       
       <guid>/tutorial/sgss-summer/</guid>
       <description>Session 1: Introduction to Statistical Programming
- What is R
- Why should we learn R
- The R and RStudio Environment
- Comments in R
- Arithmetic in R
- Objects and assignment operators
- Vectors: basics
- Functions and arguments
- Data frames
- R Packages
-  Session 2: Data Analysis
- The working directory
- Reading data into R
- Inspecting data
- A bit of indexing of data frames</description>
+ What is R Why should we learn R The R and RStudio Environment Comments in R Arithmetic in R Objects and assignment operators Vectors: basics Functions and arguments Data frames R Packages  Session 2: Data Analysis
+ The working directory Reading data into R Inspecting data A bit of indexing of data frames Univariate descriptive statistics Bivariate analysis Multiple regression Logistic regression  Download the introduction to R and installation instructions here All materials for both sessions, including slides, scripts and data are in one folder and can be downloaded here</description>
     </item>
     
     <item>
